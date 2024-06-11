@@ -1,0 +1,96 @@
+/*リセットCSS*/
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ベーススタイル */
+body {
+  font-family: Arial, sans-serif;
+  color: #000080; /* ダークブルー */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: #000080; /* ダークブルー */
+  padding: 10px 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 19px;
+}
+
+/* メインコンテンツ */
+.main-wrapper {
+  height: calc(100% - 50px - 50px);
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+}
+
+.main-title {
+  font-size: 32px;
+  color: #000080;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  font-size: 24px;
+  color: #000080;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 16px;
+  color: #000080;
+  line-height: 1.5;
+}
+
+/* フッター */
+.site-footer {
+  height: 50px;
+  background-color: #000080;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-copy {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-nav-link {
+  color: white;
+  font-size: 13px;
+}
