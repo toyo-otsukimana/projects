@@ -94,3 +94,51 @@ body {
   color: white;
   font-size: 13px;
 }
+
+/*Q&AページのCSS*/
+.question-wrapper {
+  padding: 50px 20px 50px 80px;
+  flex: 1;
+}
+
+.question-card{
+  margin-bottom: 30px;
+}
+
+.question-title,
+.question-answer{
+  display: flex;
+}
+
+.question-title{
+  margin-bottom: 10px;
+}
+
+.symbol{
+  font-size: 30px;
+  position: absolute;
+  font-weight: bold;
+}
+
+.question-article,
+.answer-article{
+  position: relative;
+  left: 35px;
+}
+
+.question-article{
+  font-size: 20px;
+  top: 5px;
+}
+
+.answer-article{
+  color: #222222;
+  top: 8px;
+}
+
+.javascript-code{
+  background-color: #222222;
+  color: white;
+  margin-top: 5px;
+  padding: 5px;
+}
