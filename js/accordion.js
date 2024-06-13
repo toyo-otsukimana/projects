@@ -82,9 +82,7 @@ const accordions = document.querySelectorAll(".js-accordion");
 // 取得したアコーディオンをArrayに変換(IE対策)
 const accordionsArr = Array.prototype.slice.call(accordions);
 
-
 accordionsArr.forEach((accordion) => {
-  
   // Triggerを全て取得
   const accordionTriggers = accordion.querySelectorAll(".js-accordion-trigger");
   // TriggerをArrayに変換(IE対策)
@@ -93,7 +91,6 @@ accordionsArr.forEach((accordion) => {
   accordionTriggersArr.forEach((trigger) => {
     // Triggerにクリックイベントを付与
     trigger.addEventListener("click", (e) => {
-      console.log("ooo")
       accordionTriggersArr.forEach((trigger) => {
         // クリックしたアコーディオン以外を全て閉じる
         if (trigger !== e.target.parentElement) {
