@@ -93,4 +93,45 @@ body {
 .footer-nav-link {
   color: white;
   font-size: 13px;
+/*--------------------------------------------------------------------------
+      属性
+--------------------------------------------------------------------------*/
+.css-term, .css-properties {
+  width: 100%;
+  margin: 0 auto;
+}
+.accordion {
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+
+/*--------------------------------------------------------------------------
+      属性(アコーディオン)
+--------------------------------------------------------------------------*/
+
+/* アコーディオン全体 */
+.accordion {
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+
+/* アコーディオン */
+.accordion__item {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* アコーディオンのタイトル */
+.accordion__title {
+  position: relative;
+  padding: 15px 60px 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 }
