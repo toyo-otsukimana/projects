@@ -1,32 +1,302 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webページ作成ガイド</title>
-  <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webページ作成ガイド</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">HTML</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">用語集</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">手順</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Q&A</a></li>
-      <!--必要に応じて項目を追加します。-->
-    </ul>
-  </header>
+    <header class="site-header">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">HTML</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">用語集</a></li>
+            <li class="nav-item"><a href="#process" class="nav-link">手順</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Q&A</a></li>
+            <!--必要に応じて項目を追加します。-->
+        </ul>
+    </header>
 
-  <footer class="site-footer">
-    <div class="footer-copy">&copy;Web制作ガイド</div>
-    <ul class="footer-nav-list">
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">サイトマップ</a></li>
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">プライバシーポリシー</a></li>
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">利用規約</a></li>
-    </ul>
-  </footer>
+    <div class="process-main" id="process">
+        <div class="process-contents">
+            <div class="title-image">
+                <img class="top-image" src="https://media.istockphoto.com/id/1178946086/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AE%E7%94%BB%E9%9D%A2%E3%81%A8%E6%90%BA%E5%B8%AF%E9%9B%BB%E8%A9%B1%E3%81%AE%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%81%A7%E5%BF%9C%E7%AD%94%E6%80%A7%E3%81%AE%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3.jpg?s=612x612&w=0&k=20&c=c5TANmhe_AQMgWltWQ8y_H-kS70bkeJqOi_kGSuIPfk=">
+                <h1 class="title">Webサイト<br>作成の手順</h1>
+            </div>
+            <div class="toc">
+                <h2 class="">目次</h2>
+                <ul>
+                    <li><a href="#plan">1.企画と計画</a>
+                        <ul>
+                            <li><a href="#1-1">1-1.目的と目標の設定</a></li>
+                            <li><a href="#1-2">1-2.ペルソナの設定</a></li>
+                            <li><a href="#1-3">1-3.サイトマップの作成</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#design">2.デザイン</a>
+                        <ul>
+                            <li><a href="#2-1">2-1.ワイヤーフレームの作成</a></li>
+                            <li><a href="#2-2">2-2.ビジュアルデザイン</a></li>
+                            <li><a href="#2-3">2-3.ユーザーエクスペリエンスの考慮</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#development">3.開発</a>
+                        <ul>
+                            <li><a href="#3-1">3-1.HTML/CSSコーディング</a></li>
+                            <li><a href="#3-2">3-2.レスポンシブデザインの対応</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#test">4.テストと公開</a>
+                        <ul>
+                            <li><a href="#4-1">4-1.ブラウザテスト</a></li>
+                            <li><a href="#4-2">4-2.SEO対策</a></li>
+                            <li><a href="#4-3">4-3.公開準備</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#maintenance">5.メンテナンス</a>
+                        <ul>
+                            <li><a href="#5-1">5-1.定期的な更新</a></li>
+                            <li><a href="#5-2">5-2.ユーザーフィードバックの収集と改善</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--1-->
+            <div class="chunk">
+                <h2 class="title">
+                    <span id="plan">企画と計画</span>
+                </h2>
+                <img style="display: block; margin: auto;" src="https://media.istockphoto.com/id/915156886/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E9%96%8B%E7%99%BA%E8%80%85%E3%83%81%E3%83%BC%E3%83%A0-%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%AE%E5%A7%94%E5%93%A1%E4%BC%9A%E3%81%A7%E6%AF%8E%E9%80%B1%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB-%E3%82%BF%E3%82%B9%E3%82%AF%E3%82%92%E8%A8%88%E7%94%BB%E3%81%97%E3%81%BE%E3%81%99%E3%83%81%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%82%B3%E3%83%A9%E3%83%9C%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-%E3%83%95%E3%83%A9%E3%83%83%E3%83%88-%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88.jpg?s=612x612&w=0&k=20&c=ZeFgZtndyM_vemLUhik_wz-aRHkl52JVLttTQNq4my4=">
+                <p class="process-description">まずは、webサイトの基本的な骨組みと目的を定めます。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="1-1">1.目的と目標の設定</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ウェブサイトの主要な目的を明確にします。<br>例えば、製品販売なら「月間売上を10%増加させる」、情報提供なら「月間訪問者数を1万人に増加させる」といった具体的な目標を設定します。</p>
+                <p class="process-description">これにより、サイト制作の方向性が明確になります。目標はSMART（Specific, Measurable, Achievable, Relevant, Time-bound）で設定することが重要です。以下の表に、目的の例とその達成目標を示します。</p>
+                <table class="table-1">
+                    <tr>
+                        <th>目的</th>
+                        <th>達成目表</th>
+                    </tr>
+                    <tr>
+                        <td>製品販売</td>
+                        <td>月間売上を10%増加させる</td>
+                    </tr>
+                    <tr>
+                        <td>情報提供</td>
+                        <td>月間訪問者数を1万人に増加させる</td>
+                    </tr>
+                    <tr>
+                        <td>ポートフォリオの展示</td>
+                        <td>月間問い合わせ数を20件に増加させる</td>
+                    </tr>
+                </table>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="1-2">2.ペルソナの設定</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ウェブサイトの訪問者が誰であるかを特定します。例えば、若年層向けにはトレンディなデザイン、ビジネスパーソン向けにはプロフェッショナルなデザインが求められます。ペルソナの具体例として、年齢層、性別、興味関心、地域などを考慮します。<br>
+                <p class="process-description">これにより、訪問者のニーズに応じたコンテンツやデザインを提供することができます。以下のような要素を考慮します。</p>
+                <p class="process-description"><b>・年齢:</b> 18-24歳、25-34歳、35-44歳、45-54歳、55歳以上</p>
+                <p class="process-description"><b>・性別:</b> 男性、女性、その他</p>
+                <p class="process-description"><b>・興味:</b> テクノロジー、ファッション、健康、ビジネスなど</p>
+                <p class="process-description"><b>・地域:</b> 国内、国外、特定の都市や地域</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="1-3">3.サイトマップの作成</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ウェブサイトの全体的な構造とページの階層を決定します。</p>
+                <p class="process-description">これにより、ユーザーが簡単に情報を見つけられるようになります。例えば、トップページをつくるなら、お知らせ、企業情報、サービス、ブログ、お問い合わせなどの主要なページを設定します。<br>サイトマップは、情報の流れとナビゲーションの基盤を提供し、開発の指針となります。以下の図は、基本的なサイトマップの例です。</p>
+                <img style="display: block; margin: auto;" src="https://www.xserver.ne.jp/bizhp/wp-content/uploads/2022/02/homepage-renewal_04.png">
+            </div>
+            <!--2-->
+            <div class="chunk">
+                <h2 class="title">
+                    <span id="design">デザイン</span>
+                </h2>
+                <img style="display: block; margin: auto;" src="https://media.istockphoto.com/id/1313491142/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E5%B9%BE%E4%BD%95%E5%AD%A6%E7%9A%84%E5%BD%A2%E7%8A%B6%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E6%8A%BD%E8%B1%A1%E8%A8%AD%E8%A8%88%E8%A6%81%E7%B4%A0.jpg?s=612x612&w=0&k=20&c=uwCvs15-6RZhWr-yN91KPW7bRtO6Ew3Jf53Y5SgMGLI=">
+                <p class="process-description">デザインフェーズでは、ウェブサイトのビジュアルとユーザー体験を構築します。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="2-1">1.ワイヤーフレームの作成</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ページレイアウトの初期段階としてワイヤーフレームを作成します。<br>これは、コンテンツの配置とページ構造をシンプルに示すためのものです。</p>
+                <p class="process-description">これにより、デザインや開発チームがページのレイアウトを理解しやすくなります。例えば、ヘッダー、メインコンテンツ、サイドバー、フッターの配置を示します。以下の図は、ホームページのワイヤーフレームの例です。</p>
+                <img style="display: block; margin: auto;" src="https://www.unprinted.design/static/74cb1718992d9b5db74e4f79be3940e1/1b3fa/181.webp">
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="2-2">2.ビジュアルデザイン</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">カラースキーム、フォント、画像、その他の視覚要素を決定し、全体的なデザインを完成させます。<br>この段階では、ブランドのアイデンティティとユーザーエクスペリエンスを考慮します。例えば、メインカラー、アクセントカラー、フォントスタイルを選定します。</p>
+                <p class="process-description">これにより、ユーザーにとって魅力的で使いやすいサイトが完成します。以下の表は、デザイン要素の例です。</p>
+                <table class="table-1">
+                    <tr>
+                        <th>要素</th>
+                        <th>具体例</th>
+                    </tr>
+                    <tr>
+                        <td>カラースキーム</td>
+                        <td>メインカラー: #3498db, アクセントカラー: #2ecc71</td>
+                    </tr>
+                    <tr>
+                        <td>フォント</td>
+                        <td>見出し: Roboto, 本文: Arial</td>
+                    </tr>
+                    <tr>
+                        <td>画像</td>
+                        <td>ヒーローイメージ、製品写真、アイコン</td>
+                    </tr>
+                </table>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="2-3">3.ユーザーエクスペリエンスの考慮</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ユーザーがウェブサイトをどのように操作するかを考慮し、使いやすさや直感的なナビゲーションを設計に組み込みます。</p>
+                <p class="process-description">例えば、重要な情報やリンクを目立つ位置に配置し、簡単にアクセスできるようにします。ユーザーが直感的にサイトを操作できるデザインを目指します。ナビゲーションメニューの配置やボタンのデザイン、ページ遷移のスムーズさを重視します。例えば、以下の点に注意します。</p>
+                <p class="process-description"><b>・ナビゲーション:</b> メニューは常に画面の上部に固定し、アクセスしやすくする。</p>
+                <p class="process-description"><b>・コールトゥアクション:</b> 重要なアクションボタンは目立つ色で配置し、ユーザーがすぐに見つけられるようにする。</p>
+            </div>
+            <!--3-->
+            <div class="chunk">
+                <h2 class="title">
+                    <span id="development">開発</span>
+                </h2>
+                <img style="display: block; margin: auto;" src="https://media.istockphoto.com/id/1148587411/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88%E3%83%96%E3%83%83%E3%82%AF%E3%82%92%E5%82%99%E3%81%88%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B9.jpg?s=612x612&w=0&k=20&c=IJltmt8Kqd2Ma-D1I0kMVjuz_ay-SZj1mdI7enI1g70=">
+                <p class="process-description">デザインが確定したら、開発フェーズに移ります。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="3-1">1.HTML/CSSコーディング</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">基本的なウェブページを構築するためにHTMLを使用し、デザインを適用するためにCSSを使用します。HTMLはコンテンツの構造を定義し、CSSはビジュアルデザインを適用します。コーディングの流れとしては以下の通りです。</p>
+                <p class="process-description"><b>1.ファイルフォルダを作る</b><br><b>2.レイアウトを考える</b><br><b>3.HTMLを書く</b><br><b>4.CSSを書く</b></p>
+                <p class="process-description-line">1.ファイルフォルダを作る</p>
+                <p class="process-description">まず初めに、必要なファイル、フォルダを準備します。必要なファイル、フォルダは作成するwebサイトによって変わりますが、大体の場合はプロジェクトのフォルダの中に入口であるindex.htmlがあって、CSSを格納する「css」フォルダ、画像を格納する「images」フォルダ、JavaScriptを格納する「js」フォルダが必要になります。</p>
+                <p class="process-description">コーディングを始める前に、作成するwebサイトの構造を確認します。webサイト、ページは基本的にはブロックの組み合わせです。</p>
+                <p class="process-description-line">2.レイアウトを考える</p>
+                <p class="process-description">まずはざっくりとでいいのでどういう枠組みで構成されているか考えます。</p>
+                <p class="process-description">その際にclassやidを割り振っておくとCSSを書くときに楽です。構造をしっかりと整理・把握するクセを付けることで、コーディングを迷うことなく進めることができます。</p>
+                <p class="process-description-line">3.HTMLを書く</p>
+                <p class="process-description">はじめに、head内にwebサイト、ページの情報を記述します。</p>
+                <p class="process-description">続いて、bodyの中身をコーディングします。<br>この部分が実際にページとしてみる部分になります。</p>
+                <p class="process-description">基本的な組み方の流れは「大枠を作る」→大枠の中でさらに「細かく分解する」を繰り返してコーディングします。</p>
+                <p class="process-description">そしてレイアウトが完成したら実際に表示させたい画像・テキストをはめ込んでいきます。</p>
+                <p class="process-description-line">4.CSSを書く</p>
+                <p class="process-description">「HTMLを書く」で書いたコードに対して装飾します。慣れるまではブロック構造が分かりやすいように色付けして作業するといいかもしれません。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="3-2">2.レスポンシブデザインの対応</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">モバイルデバイスや異なる画面サイズに対応するために、レスポンシブデザインを適用します。メディアクエリを使用して、画面サイズに応じたスタイルを適用します。</p>
+                <p class="process-description">これにより、どのデバイスでも快適に閲覧できるウェブサイトが完成します。レスポンシブデザインは、ユーザー体験を向上させ、検索エンジン最適化にも寄与します。</p>
+            </div>
+            <!--4-->
+            <div class="chunk">
+                <h2 class="title">
+                    <span id="test">テストと公開</span>
+                </h2>
+                <img style="display: block; margin: auto;" src="https://media.istockphoto.com/id/1273058761/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%A7%E5%93%81%E8%B3%AA%E4%BF%9D%E8%A8%BC%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B%E5%B0%8F%E3%81%95%E3%81%AA%E4%BA%BA%E3%80%85.jpg?s=612x612&w=0&k=20&c=GvvZjpSezCD0JmUC9T9aEpAE4QCI5cHlpb-08XDWnw0=">
+                <p class="process-description">ウェブサイトが完成したら、公開前に徹底的にテストを行います。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="4-1">1.ブラウザテスト</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ウェブサイトが主要なブラウザ（Chrome、Firefox、Safari、Edgeなど）で正しく表示されるかを確認します。各ブラウザでの表示や動作をテストし、クロスブラウザ互換性を確保します。</p>
+                <p class="process-description">これにより、どのブラウザでも一貫したユーザー体験を提供できます。以下の表は、テストするブラウザとそのバージョンの例です。</p>
+                <table class="table-1">
+                    <tr>
+                        <th>ブラウザ</th>
+                        <th>バージョン</th>
+                    </tr>
+                    <tr>
+                        <td>Chrome</td>
+                        <td>最新版</td>
+                    </tr>
+                    <tr>
+                        <td>Firefox</td>
+                        <td>最新版</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td>最新版</td>
+                    </tr>
+                    <tr>
+                        <td>Edge</td>
+                        <td>最新版</td>
+                    </tr>
+                </table>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="4-2">2.SEO対策</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">検索エンジンでのランキングを向上させるために、SEO（検索エンジン最適化）を実施します。以下の要素を最適化します。メタタグの設定、キーワードの適切な配置、サイトマップの提出などを行います。</p>
+                <p class="process-description">これにより、検索エンジンからのトラフィックを増加させることができます。以下の要素を最適化します。</p>
+                <p class="process-description"><b>・メタタグ:</b> タイトルタグ、メタディスクリプションを最適化し、キーワードを含めます。</p>
+                <p class="process-description"><b>・キーワード:</b> 主要なキーワードをページのタイトル、見出し、本文に適切に配置します。</p>
+                <p class="process-description"><b>・サイトマップ:</b> 検索エンジンに送信するXMLサイトマップを作成します。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="4-3">3.公開準備</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ウェブホスティングサービスを選択し、ドメインを設定し、ウェブサイトを公開します。ホスティングサービスにファイルをアップロードし、DNS設定を行います。</p>
+                <p class="process-description">これにより、ウェブサイトがインターネット上でアクセス可能になります。公開前には、すべてのリンクと機能を再確認します。以下の手順を含みます。</p>
+                <p class="process-description"><b>1.ホスティングサービスの選択:</b> 信頼性が高く、必要なリソースを提供するホスティングサービスを選びます。</p>
+                <p class="process-description"><b>2.ドメインの設定:</b> ウェブサイトに適したドメイン名を選択し、設定します。</p>
+                <p class="process-description"><b>3.ファイルのアップロード:</b> FTPやホスティングサービスのファイルマネージャを使用してウェブサイトのファイルをアップロードします。</p>
+                <p class="process-description"><b>4.DNS設定:</b> ドメインのDNS設定を行い、正しくウェブサイトにアクセスできるようにします。</p>
+            </div>
+            <!--5-->
+            <div class="chunk">
+                <h2 class="title">
+                    <span id="maintenance">メンテナンス</span>
+                </h2>
+                <img style="display: block; margin: auto;" src="https://media.istockphoto.com/id/1336601182/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E4%BF%AE%E7%90%86%E3%81%AE%E6%A6%82%E5%BF%B5.jpg?s=612x612&w=0&k=20&c=r8czq1dLWvZ282Gco82N0z9LjP_YiLuFIjetjqhifA0=">
+                <p class="process-description">ウェブホスティングサービスを選択し、ドメインを設定し、ウェブサイトを公開します。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="5-1">1.定期的な更新</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">コンテンツの追加や更新を定期的に行い、ウェブサイトを最新の状態に保ちます。新しいブログ投稿の追加、製品情報の更新などを行います。</p>
+                <p class="process-description">これにより、訪問者が常に新しい情報を得られるようになります。継続的なコンテンツ更新はSEOにも有益です。以下のようなアクションを行います。</p>
+                <p class="process-description"><b>・新しいブログ投稿の追加:</b> 定期的に新しい記事を追加し、SEO対策を強化します。</p>
+                <p class="process-description"><b>・製品情報の更新:</b> 新しい製品やサービスの情報を追加し、既存の情報を更新します。</p>
+                <h3 class="title">
+                    <div class="line"></div>
+                    <span id="5-2">2.ユーザーフィードバックの収集と改善</span>
+                    <div class="line"></div>
+                </h3>
+                <p class="process-description">ユーザーからのフィードバックを収集し、ウェブサイトの改善に役立てます。アンケートの実施、コメントやメールの確認、アクセス解析ツールの使用などを行います。</p>
+                <p class="process-description">これにより、ユーザーのニーズを理解し、サイトの改善に活かすことができます。以下のような方法でフィードバックを収集します。</p>
+                <p class="process-description"><b>・アンケートの実施:</b> ウェブサイト上でアンケートを実施し、ユーザーの意見を集めます。</p>
+                <p class="process-description"><b>・コメントやメールの確認:</b> ユーザーからのコメントやメールを定期的に確認し、対応します。</p>
+                <p class="process-description"><b>・アクセス解析ツールの使用:</b> Google Analytics4などのアクセス解析ツールを使用して、ユーザーの行動を分析します。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-copy">&copy;Web制作ガイド</div>
+        <ul class="footer-nav-list">
+            <li class="footer-nav-item"><a href="#" class="footer-nav-link">サイトマップ</a></li>
+            <li class="footer-nav-item"><a href="#" class="footer-nav-link">プライバシーポリシー</a></li>
+            <li class="footer-nav-item"><a href="#" class="footer-nav-link">利用規約</a></li>
+        </ul>
+    </footer>
+
 </body>
 </html>
