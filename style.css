@@ -93,6 +93,46 @@ body {
 .footer-nav-link {
   color: white;
   font-size: 13px;
+}
+
+/*--------------------------------------------------------------------------
+      CSSリファレンス
+--------------------------------------------------------------------------*/
+.css-main {
+  width: 80%;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+.css-about {
+  margin: 0 auto;
+}
+
+/* CSSの記述の部分 */
+.css-structure, 
+.css-samplecode{
+  width: 75%;
+  margin: 0 auto;
+  padding: 15px 30px;
+  background-color: #333;
+}
+
+#cssCodeBlock1,
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
+  color: white;
+}
+
+#cssCodeBlock2 span,
+#cssCodeBlock3 span,
+#cssCodeBlock4 span,
+#cssCodeBlock5 span {
+  background-color: #ffd700;
+  color: #ff4500;
+}
+
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
