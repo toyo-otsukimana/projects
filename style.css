@@ -186,6 +186,19 @@ body {
   font-weight: normal;
 }
 
+/* text-decorationの例 */
+.fontdecoration-sample {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.fontdecoration-sample .fontdecoration-sample1 {
+  text-decoration: underline;
+}
+
+.fontdecoration-sample .fontdecoration-sample2 {
+  text-decoration: line-through;
+}
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
