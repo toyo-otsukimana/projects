@@ -133,6 +133,30 @@ body {
   color: #ff4500;
 }
 
+/* 主要プロパティの例で使うdiv */
+.css-properties-sample {
+  height: auto;
+  width: 75%;
+  border: 1px solid #ccc;
+  text-align: center;
+  display:table;
+  margin: 0 auto;
+}
+
+/* heightとwidthの例 */
+.css-properties-heightwidth-sample {
+  height: 100px;
+  width: 70%;
+  background-color: #90ee90;
+  text-align: center;
+  display:table;
+  margin: 0 auto;
+}
+
+.css-properties-heightwidth-sample p {
+  display:table-cell;
+  vertical-align:middle;
+}
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/

@@ -85,9 +85,25 @@
         </div>
       </div>
 
+        <div class="css-properties">
+        <h3>主要プロパティ</h3>
+        <div class="accordion">
+          <dl class="css-accordion js-accordion">
               <div class="accordion__item js-accordion-trigger">
-                <dt class="accordion__title">セレクタ</dt>
-                <dd class="accordion__content">段落を表します。文章を区切るときに使います。</dd>
+                <dt class="accordion__title">height・width</dt>
+                <dd class="accordion__content">
+                  <div class="css-properties-heightwidth-sample">
+                    <p>この要素は縦幅が100px、横幅が親要素の70%あります。</p>
+                  </div>
+                  heightは縦幅、widthは横幅を指定するプロパティです。<br>
+                  使用できる値の例としては以下のものがあげられます。
+                  <ul>
+                    <li>・自動で幅を決めてくれるauto</li>
+                    <li>・画面の最小単位であるピクセル（px）</li>
+                    <li>・親要素に対しての割合で表示するパーセント（%）</li>
+                    <li>・ウィンドウの表示サイズの割合で表示するvhとvw</li>
+                  </ul>
+                </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">値</dt>
