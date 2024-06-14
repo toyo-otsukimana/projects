@@ -102,7 +102,7 @@ body {
 .html-main {
   width: 80%;
   margin: 0 auto;
-  padding: 35px 0 35px 0;
+  padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
   margin-top: 20px;
@@ -110,7 +110,7 @@ body {
 
 .html-main h1, .html-main h2, .html-main h3,.html-main h4{
   width: 75%;
-  margin: 15px auto 0 auto;
+  margin: 15px auto 0;
 }
 
 
