@@ -139,8 +139,9 @@ body {
 }
 
 .javascript-code{
+  width: 60%;
   background-color: #222222;
   color: white;
   margin-top: 5px;
-  padding: 5px;
+  padding: 5px 15px;
 }
