@@ -172,6 +172,20 @@ body {
   font-size: 16px;
 }
 
+/* font-weightの例 */
+.fontweight-sample {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.fontweight-sample .fontweight-sample1 {
+  font-weight: 1000;
+}
+
+.fontweight-sample .fontweight-sample2 {
+  font-weight: normal;
+}
+
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
