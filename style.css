@@ -229,6 +229,21 @@ body {
   color: #66ff00;
 }
 
+/* background-colorの例 */
+.backgroundcolor-sample {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.backgroundcolor-sample .backgroundcolor-sample1 {
+  background-color: red;
+}
+
+.backgroundcolor-sample .backgroundcolor-sample2 {
+  background-color: #66ff00;
+}
+
+
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
