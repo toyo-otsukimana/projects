@@ -214,6 +214,21 @@ body {
 .textdecoration-sample .textdecoration-sample2 {
   text-decoration: line-through;
 }
+
+/* colorの例 */
+.color-sample {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.color-sample .color-sample1 {
+  color: red;
+}
+
+.color-sample .color-sample2 {
+  color: #66ff00;
+}
+
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
