@@ -187,16 +187,16 @@ body {
 }
 
 /* text-decorationの例 */
-.fontdecoration-sample {
+.textdecoration-sample {
   display:table-cell;
   vertical-align:middle;
 }
 
-.fontdecoration-sample .fontdecoration-sample1 {
+.textdecoration-sample .textdecoration-sample1 {
   text-decoration: underline;
 }
 
-.fontdecoration-sample .fontdecoration-sample2 {
+.textdecoration-sample .textdecoration-sample2 {
   text-decoration: line-through;
 }
 /*--------------------------------------------------------------------------
