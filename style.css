@@ -157,6 +157,21 @@ body {
   display:table-cell;
   vertical-align:middle;
 }
+
+/* font-sizeの例 */
+.fontsize-sample {
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.fontsize-sample .fontsize-sample1 {
+  font-size: 24px;
+}
+
+.fontsize-sample .fontsize-sample2 {
+  font-size: 16px;
+}
+
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
