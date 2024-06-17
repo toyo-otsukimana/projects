@@ -270,3 +270,306 @@ body {
   color: white;
   font-size: 13px;
 }
+
+
+/* webサイト制作の手順 */
+
+
+.process-main {
+  width: 100%;
+}
+
+.title-image {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+}
+
+.title-image img {
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.top-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+}
+
+.title-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.process-contents {
+  width: 70%;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+h1.title {
+  margin: 20px;
+}
+
+.toc {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc ul ul {
+  padding-left: 20px;
+}
+
+.toc ul ul li {
+  padding: 0.5rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+h2.title {
+  margin: 30px;
+}
+
+p.process-description {
+  margin: 30px;
+}
+
+p.process-description-line {
+  margin: 50px 30px 30px 30px;
+  text-decoration: underline;
+}
+
+h3.title {
+  margin: 30px;
+  background: transparent;
+  border-top: .125em solid #000080;
+  border-bottom: .125em solid #000080;
+  text-align: left;
+}
+
+.chunk {
+  margin: 20px;
+  padding: 15px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 0.5em;
+  text-align: left;
+}
+
+table th {
+  background-color: #000080;
+  color: #ffffff;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.scroll-top:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+strong {
+  padding-left: 5px;
+}
+
+/* メディアクエリ */
+@media (max-width: 1024px) {
+  .process-contents {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-image h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .title-image h1 {
+    font-size: 2rem;
+  }
+
+  .toc {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  table    font-size: 0.7rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2em;
+  }
+
+/*Q&AページのCSS*/
+.question-wrapper {
+  width: 80%;
+  padding: 35px 0;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.question-card{
+  margin-bottom: 30px;
+}
+
+.question-title,
+.question-answer{
+  display: flex;
+}
+
+.question-title{
+  margin-bottom: 10px;
+}
+
+.symbol{
+  font-size: 30px;
+  position: absolute;
+  font-weight: bold;
+}
+
+.question-article,
+.answer-article{
+  position: relative;
+  left: 40px;
+}
+
+.question-article{
+  font-size: 20px;
+  top: 5px;
+}
+
+.answer-article{
+  color: #222222;
+  top: 8px;
+}
+
+.javascript-code{
+  width: 60%;
+  background-color: #222222;
+  color: white;
+  margin-top: 5px;
+  padding: 5px 15px;
+
+}
