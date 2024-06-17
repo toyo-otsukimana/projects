@@ -217,6 +217,41 @@
                 marginは、要素の外側の余白を、paddingは要素の内側の余白を指定します。borderは要素の境界線の設定を行います。
               </dd>
             </div>
+            <!-- display -->
+            <div class="accordion__item js-accordion-trigger">
+              <dt class="accordion__title">display</dt>
+              <dd class="accordion__content">
+                <div class="css-properties-sample">
+                  <div class="display-sample-top">
+                    display:blockを指定した場合、要素は縦に並びます。
+                    <div>
+                      <a class="display-sample-a">要素1</a>
+                      <a class="display-sample-a">要素2</a>
+                    </div>
+                  </div>
+                  <div class="display-sample-bottom">
+                    display:noneを指定した場合、要素は非表示になります。
+                    <div>
+                      <div class="display-sample-none">要素1</div>
+                      <div class="display-sample-none">要素2</div>
+                    </div>
+                  </div>
+                </div>
+                displayは、指定した要素の表示形式を設定します。<br>
+                <dl>
+                  使用できる値としては以下のものがあげられます。
+                  <dt>・block</dt>
+                  <dd>要素が縦に並び、幅・高さ・余白の指定ができる。テキストの縦横の配置を指定できない。</dd>
+                  <dt>・inline</dt>
+                  <dd>要素が横に並び、幅・高さ・上下の余白の指定ができない。テキストの縦横の配置を指定できる。</dd>
+                  <dt>・inline-block</dt>
+                  <dd>要素が横に並び、幅・高さ・余白の指定ができる。テキストの縦横の配置を指定できる。</dd>
+                  <dt>・none</dt>
+                  <dd>要素を非表示にする。</dd>
+                </dl>
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </div>
