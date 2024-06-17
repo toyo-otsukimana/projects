@@ -346,6 +346,7 @@ strong {
   table td {
     padding: 0.2em;
   }
+}
 
 /*Q&AページのCSS*/
 .question-wrapper {
@@ -396,5 +397,4 @@ strong {
   color: white;
   margin-top: 5px;
   padding: 5px 15px;
-
 }
