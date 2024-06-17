@@ -212,6 +212,38 @@ img {
   height: auto;
 }
 
+.image1 {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.image2 {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.image3 {
+  display: block;
+  margin: 0 auto;
+}
+
+.image4 {
+  display: block;
+  margin: 0 auto;
+}
+
+.image5 {
+  display: block;
+  margin: 0 auto;
+}
+
+.image6 {
+  display: block;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 2rem;
 }
