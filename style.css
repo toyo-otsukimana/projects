@@ -112,7 +112,7 @@ body {
 .css-structure, 
 .css-samplecode{
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   padding: 15px 30px;
   background-color: #333;
 }
@@ -137,20 +137,22 @@ body {
 .css-properties-sample {
   height: auto;
   width: 75%;
+  padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
   display:table;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 /* heightとwidthの例 */
 .css-properties-heightwidth-sample {
   height: 100px;
   width: 70%;
+  border: 1px solid #006400;
   background-color: #90ee90;
   text-align: center;
   display:table;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .css-properties-heightwidth-sample p {
@@ -164,11 +166,11 @@ body {
   vertical-align:middle;
 }
 
-.fontsize-sample .fontsize-sample1 {
+.fontsize-sample .fontsize-sample-top {
   font-size: 24px;
 }
 
-.fontsize-sample .fontsize-sample2 {
+.fontsize-sample .fontsize-sample-bottom {
   font-size: 16px;
 }
 
@@ -178,11 +180,11 @@ body {
   vertical-align:middle;
 }
 
-.fontweight-sample .fontweight-sample1 {
+.fontweight-sample .fontweight-sample-top {
   font-weight: 1000;
 }
 
-.fontweight-sample .fontweight-sample2 {
+.fontweight-sample .fontweight-sample-bottom {
   font-weight: normal;
 }
 
@@ -192,12 +194,12 @@ body {
   vertical-align:middle;
 }
 
-.fontfamily-sample .fontfamily-sample1 {
+.fontfamily-sample .fontfamily-sample-top {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 
 }
 
-.fontfamily-sample .fontfamily-sample2 {
+.fontfamily-sample .fontfamily-sample-bottom {
   font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
@@ -207,11 +209,11 @@ body {
   vertical-align:middle;
 }
 
-.textdecoration-sample .textdecoration-sample1 {
+.textdecoration-sample .textdecoration-sample-top {
   text-decoration: underline;
 }
 
-.textdecoration-sample .textdecoration-sample2 {
+.textdecoration-sample .textdecoration-sample-bottom {
   text-decoration: line-through;
 }
 
@@ -221,11 +223,11 @@ body {
   vertical-align:middle;
 }
 
-.color-sample .color-sample1 {
+.color-sample .color-sample-top {
   color: red;
 }
 
-.color-sample .color-sample2 {
+.color-sample .color-sample-bottom {
   color: #66ff00;
 }
 
@@ -235,11 +237,12 @@ body {
   vertical-align:middle;
 }
 
-.backgroundcolor-sample .backgroundcolor-sample1 {
+.backgroundcolor-sample .backgroundcolor-sample-top {
+  color: whitesmoke;
   background-color: red;
 }
 
-.backgroundcolor-sample .backgroundcolor-sample2 {
+.backgroundcolor-sample .backgroundcolor-sample-bottom {
   background-color: #66ff00;
 }
 
