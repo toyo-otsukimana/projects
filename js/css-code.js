@@ -3,16 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const codeBlock = document.getElementById('cssCodeBlock1');
   const codeString = 
   `div {
-  height: 100px;
-  width:  100px;
+  height: auto;
+  width:  1000px;
 }
 
 .class-name {
-
+  display: block;
+  margin:  auto;
+  border:  1px solid red;
+  padding: 10px 5px 15px 5px;
+  background-coler: #ffffff;
 }
 
 #id-name {
-
+  color: red
+  font-size: 24px;
+  font-weight: 1000;
+  font-family: "游明朝";
+  text-decoration: underline;
 }
 `
 ;
