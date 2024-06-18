@@ -560,7 +560,8 @@ strong {
     font-size: 0.8rem;
   }
 
-  table    font-size: 0.7rem;
+  table {
+    font-size: 0.7rem;
   }
 
   table th,
