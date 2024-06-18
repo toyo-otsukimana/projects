@@ -16,7 +16,35 @@ body {
   height: 100vh;
 }
 
-/* ヘッダー */
+.main-wrapper {
+  height: calc(100% - 50px - 50px);
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+}
+
+.main-title {
+  font-size: 32px;
+  color: #000080;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  font-size: 24px;
+  color: #000080;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 16px;
+  color: #000080;
+  line-height: 1.5;
+}
+
+/*==============================================================================================================
+      header
+================================================================================================================*/
+
 .site-header {
   background-color: #000080; /* ダークブルー */
   padding: 10px 0;
@@ -38,8 +66,8 @@ body {
 
 .nav-link {
   color: white;
-  font-size: 19px;
 }
+
 
 /* メインコンテンツ */
 .main-wrapper {
@@ -67,7 +95,155 @@ body {
   line-height: 1.5;
 }
 
-/* フッター */
+/*==============================================================================================================
+      HTMLリファレンスーmain
+================================================================================================================*/
+
+.html-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.html-main h1, .html-main h2, .html-main h3,.html-main h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+
+.html-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+      コード表示
+------------------------------------------------------------------------------------------------------------------------*/
+.structure{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+#codeBlock {
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+      基本構造
+------------------------------------------------------------------------------------------------------------------------*/
+.html-contents {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.html-contents ul li {
+  list-style:disc;
+  margin-left: 25px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+      属性
+------------------------------------------------------------------------------------------------------------------------*/
+.element, .attribute,.attribute-img,.attribute-list,
+.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag {
+  width: 100%;
+  margin: 100px auto;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+      属性(アコーディオン)
+------------------------------------------------------------------------------------------------------------------------*/
+
+/* アコーディオン全体 */
+.accordion {
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+
+/* アコーディオン */
+.accordion__item {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* アコーディオンのタイトル */
+.accordion__title {
+  position: relative;
+  padding: 15px 60px 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* (+)アイコン */
+.accordion__title::before,
+.accordion__title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #3abec1;
+  width: 20px;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.accordion__title::after {
+  transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.accordion__content {
+  padding: 0 35px 15px 20px;
+  display: none;
+  cursor: pointer;
+  line-height: 2rem;
+}
+
+.accordion__content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.accordion__item.is-active .accordion__title::before {
+  transform: rotate(180deg);
+}
+
+.accordion__item.is-active .accordion__title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+.code-container {
+  width:50%;
+  height: 45px;
+  margin-left: 30px;
+
+}
+
+.code-container h6{
+  height: 30px;
+}
+
+.code-container h1, .code-container h2, .code-container h3,
+ .code-container h4, .code-container h5, .code-container h6, .code-container p{
+  width: 25%;
+  display: inline-block;
+}
+
+
+/*==============================================================================================================
+      footer
+================================================================================================================*/
 .site-footer {
   height: 50px;
   background-color: #000080;
@@ -384,8 +560,7 @@ strong {
     font-size: 0.8rem;
   }
 
-  table {
-    font-size: 0.7rem;
+  table    font-size: 0.7rem;
   }
 
   table th,
@@ -444,3 +619,4 @@ strong {
   margin-top: 5px;
   padding: 5px 15px;
 }
+
