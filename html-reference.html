@@ -174,7 +174,7 @@
                 <dd class="accordion__content ">リンクを表します。他のページへのリンクや、同じページ内の場所へのリンクを作成します。<br>
                   使い方:　
                   &lt;a&gt;リンクだよ&lt;/a&gt;<br><br>
-                  関連する属性<br>
+                  <span class="anderline">関連する属性</span><br>
                   <ul>
                     <li>href: リンク先のURL</li>
                     <li>target: リンク先の開き方 (_blank, _self, _parent, _top)</li>
@@ -196,7 +196,7 @@
                   <dd class="accordion__content ">画像を表示します。src属性に画像のURLを指定します。<br>
                     使い方:　
                     &lt;img src="image.png(jpgn) alt="代替テキスト"&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 画像のURL</li>
                       <li>alt: 代替テキスト</li>
@@ -252,7 +252,7 @@
                   <dd class="accordion__content ">フォームを作成<br>
                     使い方:　
                     &lt;form&gt;&lt;/form&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>action: フォームの送信先URL</li>
                       <li>method: フォームの送信方法 (GET, POST)</li>
@@ -266,7 +266,7 @@
                   <dd class="accordion__content ">入力フィールド<br>
                     使い方:　
                     &lt;input&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: 入力フィールドの種類 (text, password, submit, checkbox, radio, fileなど)</li>
                       <li>name: フィールド名</li>
@@ -283,7 +283,7 @@
                   <dd class="accordion__content ">テキストエリア<br>
                     使い方:　
                     &lt;textarea&gt;&lt;/textarea&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: 入力フィールドの種類 (text, password, submit, checkbox, radio, fileなど)</li>
                       <li>name: フィールド名</li>
@@ -300,7 +300,7 @@
                   <dd class="accordion__content ">ボタン<br>
                     使い方:　
                     &lt;button&gt;&lt;/button&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: ボタンの種類 (button, submit, reset)</li>
                       <li>name: フィールド名</li>
@@ -343,7 +343,7 @@
                   <dd class="accordion__content ">テーブルを作成<br>
                     使い方:　
                     &lt;table&gt;&lt;/table&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>border: テーブルの枠線の幅</li>
                     </ul><br>
@@ -356,7 +356,7 @@
                   <dd class="accordion__content ">テーブルの行<br>
                     使い方:　
                     &lt;tr&gt;&lt;/tr&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>rowspan: 行の結合</li>
                     </ul><br>
@@ -369,7 +369,7 @@
                   <dd class="accordion__content ">テーブルのセル<br>
                     使い方:　
                     &lt;td&gt;&lt;/td&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>colspan: 列の結合</li>
                     </ul><br>
@@ -470,32 +470,43 @@
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;audio&gt;</dt>
-                  <dd class="accordion__content ">音声<br>
+                  <dd class="accordion__content ">HTMLで音声ファイルを埋め込むために使用されます。このタグを使うと、ウェブページ上で音声を再生することができます。<br>
                     使い方:　
                     &lt;audio&gt;&lt;/audio&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 音声ファイルのURL</li>
                       <li>controls: コントロール表示</li>
+                      <li>autoplay: 音声を自動再生します。</li>
+                      <li>loop: 音声を繰り返し再生します。</li>
+                      <li>muted: 音声をミュートにします.</li>
                     </ul><br>
                     使用例:　
-                    &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+                    &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;<br><br>
+                    <span class="color-red">※</span>基本的にautoplayは使うべきではありません。「静かな電車の中で意図せずスマートフォンから音が再生されてしまう」のような不快なユーザー体験につながる可能性があるため注意が必要です。<br>
+                    <span class="color-red">※</span>主要なモバイル端末のブラウザでは上記のような理由からautoplayに対応していません。
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;video&gt;</dt>
-                  <dd class="accordion__content ">動画<br>
+                  <dd class="accordion__content ">HTMLで動画を埋め込むために使用されます。このタグを使うと、ウェブページ上で動画を再生することができます。<br>
                     使い方:　
                     &lt;video&gt;&lt;/video&gt;<br><br>
-                    関連する属性<br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 音声ファイルのURL</li>
                       <li>controls: コントロール表示</li>
                       <li>width: 幅</li>
                       <li>height: 高さ</li>
+                      <li>autoplay: 動画を自動再生します。</li>
+                      <li>loop: 動画を繰り返し再生します。</li>
+                      <li>muted: 動画の音声をミュートにします。</li>
+                      <li>poster: 動画が再生される前に表示する画像のURLを指定します。</li>
                     </ul><br>
                     使用例:　
-                    &lt;video src="video.mp4" controls width="600" height="400"&gt;&lt;/video&gt;
+                    &lt;video src="video.mp4" controls width="600" height="400"&gt;&lt;/video&gt;<br><br>
+                    <span class="color-red">※</span>基本的にautoplayは使うべきではありません。「静かな電車の中で意図せずスマートフォンから音が再生されてしまう」のような不快なユーザー体験につながる可能性があるため注意が必要です。<br>
+                    <span class="color-red">※</span>主要なモバイル端末のブラウザでは上記のような理由からautoplayに対応していません。
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
