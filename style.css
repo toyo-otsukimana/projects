@@ -236,11 +236,33 @@ body {
 
 .code-container h1, .code-container h2, .code-container h3,
  .code-container h4, .code-container h5, .code-container h6, .code-container p{
-  width: 25%;
+  width: 30%;
   display: inline-block;
 }
 
+.color-red {
+  color: #ff6666;
+}
 
+.anderline {
+  border-bottom: 1px solid #3abec1;
+}
+
+.noDL {
+  border-bottom: 2px solid #3abec1;
+}
+
+.code-sample {
+  background-color: #333;
+  padding: 6px 10px;
+  color: #ccc;
+  letter-spacing: 0.1em;
+}
+
+.ol-number li{
+  list-style: decimal;
+  
+}
 /*==============================================================================================================
       footer
 ================================================================================================================*/
