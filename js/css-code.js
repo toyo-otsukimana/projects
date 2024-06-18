@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   border:  1px solid red;
   padding: 10px 5px 15px 5px;
   background-coler: #ffffff;
+  border-radius: 10px;
 }
 
 #id-name {

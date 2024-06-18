@@ -98,23 +98,51 @@ body {
 /*--------------------------------------------------------------------------
       CSSリファレンス
 --------------------------------------------------------------------------*/
-.css-main {
-  width: 80%;
-  padding: 35px 0;
+
+
+.css-about {
+  width: 100%;
   margin: 0 auto;
 }
 
-.css-about {
+.css-explanation p,
+.css-content-composition p{
+  padding: 10px 0 15px 20px;
+}
+
+.css-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.css-main h1, .css-main h2, .css-main h3,.css-main h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+
+.css-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
   margin: 0 auto;
 }
 
 /* CSSの記述の部分 */
+.css-contents {
+  width: 100%;
+  margin-top: 50px;
+}
+
 .css-structure, 
 .css-samplecode{
-  width: 75%;
-  margin: 0 auto 10px auto;
-  padding: 15px 30px;
+  width: 60%;
   background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
 
 #cssCodeBlock1,
@@ -125,61 +153,61 @@ body {
   color: white;
 }
 
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
+  padding: 3px 5px;
+}
+
 #cssCodeBlock2 span,
 #cssCodeBlock3 span,
 #cssCodeBlock4 span,
 #cssCodeBlock5 span {
-  background-color: #ffd700;
-  color: #ff4500;
+  padding: 2px;
+  background-color: #666666;
+  color: #ff9999;
+  font-weight: bold;
 }
 
 /* 主要プロパティの例で使うdiv */
 .css-properties-sample {
   height: auto;
-  width: 75%;
+  width: 80%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   text-align: center;
-  display:table;
   margin: 0 auto 10px auto;
 }
 
 /* heightとwidthの例 */
 .css-properties-heightwidth-sample {
-  height: 100px;
-  width: 70%;
-  border: 1px solid #006400;
-  background-color: #90ee90;
-  text-align: center;
-  display:table;
+  height: 200px;
+  width: 80%;
+  border: 2px solid #ccc;
+  color: white;
+  background-color: #009999;
   margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
 }
 
 .css-properties-heightwidth-sample p {
-  display:table-cell;
-  vertical-align:middle;
+  margin: auto;
 }
 
 /* font-sizeの例 */
-.fontsize-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .fontsize-sample .fontsize-sample-top {
   font-size: 24px;
+  margin: 0 auto;
 }
 
 .fontsize-sample .fontsize-sample-bottom {
   font-size: 16px;
+  margin: 0 auto;
 }
 
 /* font-weightの例 */
-.fontweight-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .fontweight-sample .fontweight-sample-top {
   font-weight: 1000;
 }
@@ -189,11 +217,6 @@ body {
 }
 
 /* font-familyの例 */
-.fontfamily-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .fontfamily-sample .fontfamily-sample-top {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 
@@ -204,11 +227,6 @@ body {
 }
 
 /* text-decorationの例 */
-.textdecoration-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .textdecoration-sample .textdecoration-sample-top {
   text-decoration: underline;
 }
@@ -218,32 +236,25 @@ body {
 }
 
 /* colorの例 */
-.color-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .color-sample .color-sample-top {
   color: red;
 }
 
 .color-sample .color-sample-bottom {
-  color: #66ff00;
+  color: #009999;
 }
 
 /* background-colorの例 */
-.backgroundcolor-sample {
-  display:table-cell;
-  vertical-align:middle;
-}
-
 .backgroundcolor-sample .backgroundcolor-sample-top {
-  color: whitesmoke;
+  padding: 3px 5px;
+  color: white;
   background-color: red;
 }
 
 .backgroundcolor-sample .backgroundcolor-sample-bottom {
-  background-color: #66ff00;
+  padding: 3px 5px;
+  color: white;
+  background-color: #009999;
 }
 
 /* margin,padding,borderの例 */
@@ -263,19 +274,30 @@ body {
 }
 
 .marginpaddingborder-sample-bor {
-  border: 1px solid red;
+  border: 1px solid #ff6666;
   padding-bottom: 30px;
-  background-color: #ff6666;
+  background-color: #ff9999;
 }
 
 .marginpaddingborder-sample-pad {
-  border: 1px solid #66ccff;
+  border: 1px solid #cc99ff;
   padding-bottom: 30px;
   background-color: #99ccff;
 }
 
 .marginpaddingborder-sample-content {
   border: 3px dotted #003399;
+}
+
+/* border-radiusの例 */
+.radius-sample {
+  width: 80%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  background-color: #009999;
+  border-radius: 10px;
 }
 
 /* displayの例 */
@@ -288,11 +310,12 @@ body {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+
 .display-sample-a {
   display: block;
   margin: 0 auto 10px auto;
   color: white;
-  background-color: #000080;
+  background-color: #009999;
   height: 40px;
   width: 80%;
   border-radius: 5px;
@@ -611,20 +634,16 @@ strong {
 /*--------------------------------------------------------------------------
       属性
 --------------------------------------------------------------------------*/
+.element, .attribute,.attribute-img,.attribute-list,
+.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
 .css-term, .css-properties {
   width: 100%;
-  margin: 0 auto;
-}
-.accordion {
-  width: 75%;
-  margin: 0 auto;
-  padding-left: 20px;
+  margin: 100px auto;
 }
 
-
-/*--------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------------------------------------
       属性(アコーディオン)
---------------------------------------------------------------------------*/
+------------------------------------------------------------------------------------------------------------------------*/
 
 /* アコーディオン全体 */
 .accordion {
@@ -688,4 +707,21 @@ strong {
 .accordion__item.is-active .accordion__title::after {
   transform: rotate(180deg);
   opacity: 0;
+}
+
+.code-container {
+  width:50%;
+  height: 45px;
+  margin-left: 30px;
+
+}
+
+.code-container h6{
+  height: 30px;
+}
+
+.code-container h1, .code-container h2, .code-container h3,
+ .code-container h4, .code-container h5, .code-container h6, .code-container p{
+  width: 25%;
+  display: inline-block;
 }
