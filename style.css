@@ -369,6 +369,13 @@ p.process-description-line {
   text-decoration: underline;
 }
 
+.process-description-title {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin: 30px;
+  padding: 5px 7px;
+}
+
 h3.title {
   margin: 30px;
   background: transparent;
@@ -386,6 +393,45 @@ img {
   width: 100%;
   max-width: 800px;
   height: auto;
+}
+
+.development-image {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  cursor: pointer;
+}
+
+.development-layout-image {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#modal-container {
+  display: none; 
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6); 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  justify-content: center; 
+  align-items: center; 
+}
+
+#modal-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100vw - 30px);
+  max-height: calc(100vh - 30px);
+}
+
+#modal-container > div > img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h2 {
@@ -521,6 +567,7 @@ strong {
   table td {
     padding: 0.2em;
   }
+}
 
 /*Q&AページのCSS*/
 .question-wrapper {
@@ -571,5 +618,5 @@ strong {
   color: white;
   margin-top: 5px;
   padding: 5px 15px;
-
 }
+
