@@ -514,14 +514,15 @@ strong {
     font-size: 0.8rem;
   }
 
-  table    font-size: 0.7rem;
+  table {
+    font-size: 0.7rem;
   }
 
   table th,
   table td {
     padding: 0.2em;
   }
-
+}
 /*Q&AページのCSS*/
 .question-wrapper {
   width: 80%;
@@ -571,5 +572,49 @@ strong {
   color: white;
   margin-top: 5px;
   padding: 5px 15px;
+}
 
+/*用語集ページのCSS*/
+.glossary-wrapper{
+  width: 80%;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+.glossary-section{
+  margin: 50px 0;
+}
+
+.section-head{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.content__items{
+  margin-top: 15px;
+}
+
+.item__title{
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.item__description{
+  color: #222222;
+}
+
+.smart__title{
+  font-size: 20px;
+  color: #000080;
+}
+
+.smart__description{
+  padding: 0 15px;
+}
+
+.under-line{
+  border: none;
+  background-color: #a3a3cc;
+  height: 0.5px;
 }
