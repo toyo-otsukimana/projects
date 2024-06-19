@@ -19,7 +19,7 @@ body {
 .main-wrapper {
   height: calc(100% - 50px - 50px);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 65px;
   padding: 50px 20px;
   flex: 1;
 }
@@ -117,7 +117,7 @@ body {
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 .html-title{
@@ -327,7 +327,7 @@ body {
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 .css-main h1, .css-main h2, .css-main h3,.css-main h4{
@@ -540,7 +540,7 @@ body {
       webサイト制作の手順 
 -------------------------------------------------------------------*/
 .process-main {
-  margin-top: 50px;
+  margin-top: 65px;
   width: 100%;
 }
 
@@ -841,7 +841,7 @@ strong {
   padding: 35px 0;
   margin: 0 auto;
   flex: 1;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 .question-card{
@@ -892,6 +892,7 @@ strong {
   width: 80%;
   padding: 35px 0;
   margin: 0 auto;
+  margin-top: 65px;
 }
 
 .glossary-title,
