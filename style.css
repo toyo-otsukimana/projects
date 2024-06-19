@@ -581,6 +581,16 @@ strong {
   margin: 0 auto;
 }
 
+.glossary-title,
+.glossary-about{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.glossary-about{
+  padding: 10px 0 15px 20px;
+}
+
 .glossary-section{
   margin: 50px 0;
 }
@@ -595,7 +605,7 @@ strong {
 }
 
 .item__title{
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 5px;
   font-weight: bold;
 }
