@@ -19,6 +19,7 @@ body {
 .main-wrapper {
   height: calc(100% - 50px - 50px);
   text-align: center;
+  margin-top: 50px;
   padding: 50px 20px;
   flex: 1;
 }
@@ -46,12 +47,23 @@ body {
 ================================================================================================================*/
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #000080; /* ダークブルー */
   padding: 10px 0;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 65px;
+  z-index: 100;
+}
+
+.site-header-title {
+  width: 100%;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav-list {
@@ -105,10 +117,10 @@ body {
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
-.html-main h1, .html-main h2, .html-main h3,.html-main h4{
+.html-title{
   width: 75%;
   margin: 15px auto 0;
 }
@@ -118,6 +130,7 @@ body {
   width: 75%;
   padding: 10px 0 15px 20px;
   margin: 0 auto;
+  color: #333;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -150,7 +163,8 @@ body {
       属性
 ------------------------------------------------------------------------------------------------------------------------*/
 .element, .attribute,.attribute-img,.attribute-list,
-.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag {
+.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
+.css-term, .css-properties {
   width: 100%;
   margin: 100px auto;
 }
@@ -207,6 +221,7 @@ body {
   display: none;
   cursor: pointer;
   line-height: 2rem;
+  color: #333;
 }
 
 .accordion__content.is-open {
@@ -223,21 +238,21 @@ body {
   opacity: 0;
 }
 
-.code-container {
-  width:50%;
-  height: 45px;
-  margin-left: 30px;
-
-}
-
-.code-container h6{
-  height: 30px;
-}
-
-.code-container h1, .code-container h2, .code-container h3,
- .code-container h4, .code-container h5, .code-container h6, .code-container p{
-  width: 30%;
+.p-sample {
   display: inline-block;
+}
+
+.code-container {
+  width:100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.code-container-title_tag {
+  width:100%;
+  height: 300px;
+  margin: 0;
+  padding-left:  30px;
 }
 
 .color-red {
@@ -292,3 +307,583 @@ body {
   color: white;
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------------------
+      CSSリファレンス
+--------------------------------------------------------------------------*/
+.css-about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.css-explanation p,
+.css-content-composition p{
+  padding: 10px 0 15px 20px;
+}
+
+.css-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 70px;
+}
+
+.css-main h1, .css-main h2, .css-main h3,.css-main h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+
+.css-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+/* CSSの記述の部分 */
+.css-contents {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.css-structure, 
+.css-samplecode{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+
+#cssCodeBlock1,
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
+  color: white;
+}
+
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
+  padding: 3px 5px;
+}
+
+#cssCodeBlock2 span,
+#cssCodeBlock3 span,
+#cssCodeBlock4 span,
+#cssCodeBlock5 span {
+  padding: 2px;
+  background-color: #666666;
+  color: #ff9999;
+  font-weight: bold;
+}
+
+/* 主要プロパティの例で使うdiv */
+.css-properties-sample {
+  height: auto;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
+/* heightとwidthの例 */
+.css-properties-heightwidth-sample {
+  height: 200px;
+  width: 80%;
+  border: 2px solid #ccc;
+  color: white;
+  background-color: #009999;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+}
+
+.css-properties-heightwidth-sample p {
+  margin: auto;
+}
+
+/* font-sizeの例 */
+.fontsize-sample .fontsize-sample-top {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.fontsize-sample .fontsize-sample-bottom {
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+/* font-weightの例 */
+.fontweight-sample .fontweight-sample-top {
+  font-weight: 1000;
+}
+
+.fontweight-sample .fontweight-sample-bottom {
+  font-weight: normal;
+}
+
+/* font-familyの例 */
+.fontfamily-sample .fontfamily-sample-top {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+}
+
+.fontfamily-sample .fontfamily-sample-bottom {
+  font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* text-decorationの例 */
+.textdecoration-sample .textdecoration-sample-top {
+  text-decoration: underline;
+}
+
+.textdecoration-sample .textdecoration-sample-bottom {
+  text-decoration: line-through;
+}
+
+/* colorの例 */
+.color-sample .color-sample-top {
+  color: red;
+}
+
+.color-sample .color-sample-bottom {
+  color: #009999;
+}
+
+/* background-colorの例 */
+.backgroundcolor-sample .backgroundcolor-sample-top {
+  padding: 3px 5px;
+  color: white;
+  background-color: red;
+}
+
+.backgroundcolor-sample .backgroundcolor-sample-bottom {
+  padding: 3px 5px;
+  color: white;
+  background-color: #009999;
+}
+
+/* margin,padding,borderの例 */
+.marginpaddingborder-sample-mar {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.marginpaddingborder-sample-pad, 
+.marginpaddingborder-sample-bor,
+.marginpaddingborder-sample-content {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.marginpaddingborder-sample-bor {
+  border: 1px solid #ff6666;
+  padding-bottom: 30px;
+  background-color: #ff9999;
+}
+
+.marginpaddingborder-sample-pad {
+  border: 1px solid #cc99ff;
+  padding-bottom: 30px;
+  background-color: #99ccff;
+}
+
+.marginpaddingborder-sample-content {
+  border: 3px dotted #003399;
+}
+
+/* border-radiusの例 */
+.radius-sample {
+  width: 80%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  background-color: #009999;
+  border-radius: 10px;
+}
+
+/* displayの例 */
+.display-sample-top div,
+.display-sample-bottom div{
+  height: 100px;
+  width: 50%;
+  margin: 0 auto 10px auto;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.display-sample-a {
+  display: block;
+  margin: 0 auto 10px auto;
+  color: white;
+  background-color: #009999;
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.display-sample-none {
+  display: none;
+}
+
+/* ------------------------------------------------------------------
+      webサイト制作の手順 
+-------------------------------------------------------------------*/
+.process-main {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.title-image {
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+}
+
+.title-image img {
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.top-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+}
+
+.title-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.process-contents {
+  width: 70%;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+h1.title {
+  margin: 20px;
+}
+
+.toc {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.toc h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc ul ul {
+  padding-left: 20px;
+}
+
+.toc ul ul li {
+  padding: 0.5rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+h2.title {
+  margin: 30px;
+}
+
+p.process-description {
+  margin: 30px;
+}
+
+p.process-description-line {
+  margin: 50px 30px 30px 30px;
+  text-decoration: underline;
+}
+
+.process-description-title {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin: 30px;
+  padding: 5px 7px;
+}
+
+h3.title {
+  margin: 30px;
+  background: transparent;
+  border-top: .125em solid #000080;
+  border-bottom: .125em solid #000080;
+  text-align: left;
+}
+
+.chunk {
+  margin: 20px;
+  padding: 15px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.development-image {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  cursor: pointer;
+}
+
+.development-layout-image {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#modal-container {
+  display: none; 
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6); 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  justify-content: center; 
+  align-items: center; 
+}
+
+#modal-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100vw - 30px);
+  max-height: calc(100vh - 30px);
+}
+
+#modal-container > div > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 0.5em;
+  text-align: left;
+}
+
+table th {
+  background-color: #000080;
+  color: #ffffff;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+.scroll-top:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+strong {
+  padding-left: 5px;
+}
+
+/* メディアクエリ */
+@media (max-width: 1024px) {
+  .process-contents {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-image h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .title-image h1 {
+    font-size: 2rem;
+  }
+
+  .toc {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  table {
+    font-size: 0.7rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2em;
+  }
+}
+
+/*Q&AページのCSS*/
+.question-wrapper {
+  width: 80%;
+  padding: 35px 0;
+  margin: 0 auto;
+  flex: 1;
+  margin-top: 70px;
+}
+
+.question-card{
+  margin-bottom: 30px;
+}
+
+.question-title,
+.question-answer{
+  display: flex;
+}
+
+.question-title{
+  margin-bottom: 10px;
+}
+
+.symbol{
+  font-size: 30px;
+  position: absolute;
+  font-weight: bold;
+}
+
+.question-article,
+.answer-article{
+  position: relative;
+  left: 40px;
+}
+
+.question-article{
+  font-size: 20px;
+  top: 5px;
+}
+
+.answer-article{
+  color: #222222;
+  top: 8px;
+}
+
+.javascript-code{
+  width: 60%;
+  background-color: #222222;
+  color: white;
+  margin-top: 5px;
+  padding: 5px 15px;
+}
+
