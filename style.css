@@ -868,3 +868,17 @@ strong {
   padding: 5px 15px;
 }
 
+/*--------------------------------------------------------------------------
+      JavaScriptリファレンス
+--------------------------------------------------------------------------*/
+#jscodeBlock, #jscodeBlock1, #jscodeBlock2, #jscodeBlock3, #jscodeBlock4, 
+#jscodeBlock5, #jscodeBlock6, #jscodeBlock7, #jscodeBlock8, #jscodeBlock9, 
+#jscodeBlock10, #jscodeBlock11, #jscodeBlock12, #jscodeBlock13, #jscodeBlock14, 
+#jscodeBlock15, #jscodeBlock16, #jscodeBlock17, #jscodeBlock18, #jscodeBlock19,
+#jscodeBlock20, #jscodeBlock21, #jscodeBlock22, #jscodeBlock23, #jscodeBlock24,
+#jscodeBlock25, #jscodeBlock26, #jscodeBlock27, #jscodeBlock28, #jscodeBlock29,
+#jscodeBlock30, #jscodeBlock31, #jscodeBlock32, #jscodeBlock33, #jscodeBlock34,
+#jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
+#jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
+  color: white;
+}
