@@ -124,6 +124,7 @@ body {
   width: 75%;
   padding: 10px 0 15px 20px;
   margin: 0 auto;
+  color: #333;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -214,6 +215,7 @@ body {
   display: none;
   cursor: pointer;
   line-height: 2rem;
+  color: #333;
 }
 
 .accordion__content.is-open {
@@ -230,10 +232,21 @@ body {
   opacity: 0;
 }
 
+.p-sample {
+  display: inline-block;
+}
+
 .code-container {
   width:100%;
-  height: 45px;
+  height: 100px;
   margin: 0 auto;
+}
+
+.code-container-title_tag {
+  width:100%;
+  height: 300px;
+  margin: 0;
+  padding-left:  30px;
 }
 
 .color-red {
