@@ -871,6 +871,34 @@ strong {
 /*--------------------------------------------------------------------------
       JavaScriptリファレンス
 --------------------------------------------------------------------------*/
+.javascript-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.javascript-main h1, h2, h3, h4{
+  width: 75%;
+  margin: 15px auto 0 auto;
+}
+
+.javascript-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+.javascript-structure{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
 #jscodeBlock, #jscodeBlock1, #jscodeBlock2, #jscodeBlock3, #jscodeBlock4, 
 #jscodeBlock5, #jscodeBlock6, #jscodeBlock7, #jscodeBlock8, #jscodeBlock9, 
 #jscodeBlock10, #jscodeBlock11, #jscodeBlock12, #jscodeBlock13, #jscodeBlock14, 
