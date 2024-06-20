@@ -81,8 +81,10 @@ body {
 }
 
 .nav-list li a.active {
-  color: rgb(255, 208, 0); /* 任意の色に変更 */
-  font-weight: bold; /* 文字を太くする */
+  color: #f7c736;
+  font-weight: bold;
+
+
 }
 
 
