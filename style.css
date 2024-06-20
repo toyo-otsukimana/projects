@@ -16,31 +16,6 @@ body {
   height: 100vh;
 }
 
-.main-wrapper {
-  height: calc(100% - 50px - 50px);
-  text-align: center;
-  margin-top: 50px;
-  padding: 50px 20px;
-  flex: 1;
-}
-
-.main-title {
-  font-size: 32px;
-  color: #000080;
-  margin-bottom: 10px;
-}
-
-.main-subtitle {
-  font-size: 24px;
-  color: #000080;
-  margin-bottom: 20px;
-}
-
-.main-description {
-  font-size: 16px;
-  color: #000080;
-  line-height: 1.5;
-}
 
 /*==============================================================================================================
       header
@@ -83,8 +58,9 @@ body {
 
 /* メインコンテンツ */
 .main-wrapper {
-  height: calc(100% - 50px - 50px);
+  height: calc(100% - 50px);
   text-align: center;
+  margin-top: 85px;
   padding: 50px 20px;
   flex: 1;
 }
@@ -107,17 +83,72 @@ body {
   line-height: 1.5;
 }
 
+.main-exp-tab {
+  width: 50%;
+  border-radius: 5px;
+  border: 3px solid #000080;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.main-exp-link {
+  color: #0073e6;
+}
+
+.dli-caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.64952em 0.375em;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+/*==============================================================================================================
+      footer
+================================================================================================================*/
+.site-footer {
+  height: 50px;
+  background-color: #000080;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-copy {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-nav-link {
+  color: white;
+  font-size: 13px;
+}
+
 /*==============================================================================================================
       HTMLリファレンスーmain
 ================================================================================================================*/
 
 .html-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
 }
 
 .html-title{
@@ -278,35 +309,6 @@ body {
   list-style: decimal;
   
 }
-/*==============================================================================================================
-      footer
-================================================================================================================*/
-.site-footer {
-  height: 50px;
-  background-color: #000080;
-  padding: 10px 0;
-  color: white;
-  text-align: center;
-}
-
-.footer-copy {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.footer-nav-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-nav-item {
-  margin: 0 15px;
-}
-
-.footer-nav-link {
-  color: white;
-  font-size: 13px;
-}
 
 /*--------------------------------------------------------------------------
       CSSリファレンス
@@ -323,11 +325,10 @@ body {
 
 .css-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
 }
 
 .css-main h1, .css-main h2, .css-main h3,.css-main h4{
@@ -540,7 +541,7 @@ body {
       webサイト制作の手順 
 -------------------------------------------------------------------*/
 .process-main {
-  margin-top: 50px;
+  margin-top: 85px;
   width: 100%;
 }
 
@@ -839,9 +840,8 @@ strong {
 .question-wrapper {
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 85px auto 0;
   flex: 1;
-  margin-top: 70px;
 }
 
 .question-card{
@@ -887,13 +887,16 @@ strong {
   padding: 5px 15px;
 }
 
+.numbered-list li{
+  list-style-type: decimal;
+}
 
 /*--------------------------------------------------------------------------
       JavaScriptリファレンス
 --------------------------------------------------------------------------*/
 .javascript-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
@@ -930,15 +933,12 @@ strong {
 #jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
   color: white;
 }
-.numbered-list li{
-  list-style-type: decimal;
-}
 
 /*用語集ページのCSS*/
 .glossary-wrapper{
   width: 80%;
   padding: 35px 0;
-  margin: 70px auto 0;
+  margin: 85px auto 0;
 }
 
 .glossary-title,
@@ -989,4 +989,3 @@ strong {
   background-color: #a3a3cc;
   height: 0.5px;
 }
-
