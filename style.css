@@ -16,31 +16,6 @@ body {
   height: 100vh;
 }
 
-.main-wrapper {
-  height: calc(100% - 50px - 50px);
-  text-align: center;
-  margin-top: 65px;
-  padding: 50px 20px;
-  flex: 1;
-}
-
-.main-title {
-  font-size: 32px;
-  color: #000080;
-  margin-bottom: 10px;
-}
-
-.main-subtitle {
-  font-size: 24px;
-  color: #000080;
-  margin-bottom: 20px;
-}
-
-.main-description {
-  font-size: 16px;
-  color: #000080;
-  line-height: 1.5;
-}
 
 /*==============================================================================================================
       header
@@ -105,6 +80,36 @@ body {
   font-size: 16px;
   color: #000080;
   line-height: 1.5;
+}
+
+/*==============================================================================================================
+      footer
+================================================================================================================*/
+.site-footer {
+  height: 50px;
+  background-color: #000080;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-copy {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-nav-link {
+  color: white;
+  font-size: 13px;
 }
 
 /*==============================================================================================================
@@ -277,35 +282,6 @@ body {
 .ol-number li{
   list-style: decimal;
   
-}
-/*==============================================================================================================
-      footer
-================================================================================================================*/
-.site-footer {
-  height: 50px;
-  background-color: #000080;
-  padding: 10px 0;
-  color: white;
-  text-align: center;
-}
-
-.footer-copy {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.footer-nav-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-nav-item {
-  margin: 0 15px;
-}
-
-.footer-nav-link {
-  color: white;
-  font-size: 13px;
 }
 
 /*--------------------------------------------------------------------------
