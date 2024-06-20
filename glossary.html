@@ -8,6 +8,9 @@
 </head>
 <body>
   <header class="site-header">
+    <div class="site-header-title">
+      Webページ制作ガイド
+    </div>
     <ul class="nav-list">
       <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
       <li class="nav-item"><a href="#" class="nav-link">環境構築</a></li>
@@ -64,6 +67,13 @@
           <ul>
             <li><a href = "#maintenance_1">5-1.定期的な更新</a></li>
             <li><a href = "#maintenance_2">5-2.ユーザーフィードバックの収集と改善</a></li>
+          </ul>
+        </li>
+        <li><a href = "#web">6.Web</a>
+          <ul>
+            <li><a href = "#web_1">6-1.Webの概要</a></li>
+            <li><a href = "#web_2">6-2.Webを構成する主な要素</a></li>
+            <li><a href = "#web_2">6-3.関連用語</a></li>
           </ul>
         </li>
       </ul>
@@ -237,14 +247,6 @@
           <dt class = "accordion__title" id = "test_1">4-1.ブラウザテスト</dt>
           <dd class = "accordion__content">
             <div class = "content__items">
-              <div class = "item__title">ブラウザ</div>
-              <div class = "item__description">
-                インターネット上のWebページをパソコンやスマートフォンで閲覧するために使用されるソフトウェア。<br>
-                代表的なブラウザに「Google Chrome」、「Mincrosoft Edge」、「Safari」、「Fire Fox」などがある。
-              </div>
-            </div>
-            <hr class = "under-line">
-            <div class = "content__items">
               <div class = "item__title">ブラウザテスト</div>
               <div class = "item__description">
                 Webサイトが様々なブラウザ上で正しく表示され、動作するかを確認するテスト。
@@ -320,6 +322,76 @@
               <div class = "item__title">ユーザーフィードバック</div>
               <div class = "item__description">
                 サイト利用者からの意見や要望。これを基にサイトの改善を図る。
+              </div>
+            </div>
+          </dd>
+        </div>
+      </dl>
+    </div>
+    <div class = "glossary-section">
+      <h3 class = "section-head" id = "web">6.Web</h3>
+      <dl class = "accordion js-accordion">
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_1">6-1.Webの概要</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">Web（ワールドワイドウェブ）</div>
+              <div class = "item__description">
+                Web（ワールドワイドウェブ、WWW）は、インターネット上で情報を共有するためのシステムであり、ハイパーテキスト文書の集合体を指す。
+              </div>
+            </div>
+          </dd>
+        </div>
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_2">6-2.Webを構成する主な要素</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">Webブラウザ</div>
+              <div class = "item__description">
+                Webブラウザは、ユーザーがWebページを閲覧するためのソフトウェア。<br>
+                代表的なWebブラウザには、Google Chrome、Mozilla Firefox、Microsoft Edge、Safariなどがある。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">Webサーバ</div>
+              <div class = "item__description">
+                Webサーバは、Webページをホスティングし、ユーザーの要求に応じてこれらのページを提供するコンピュータシステム。<br>
+                Apache、Nginx、Microsoft IISなどが一般的なWebサーバソフトウェアに該当する。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">URL（Uniform Resource Locator）</div>
+              <div class = "item__description">
+                URLは、インターネット上で特定のリソースを識別するためのアドレス。例えば、`https://www.example.com`のように書かれる。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">HTTP/HTTPS（Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure）</div>
+              <div class = "item__description">
+                HTTPは、WebブラウザとWebサーバ間で情報を通信するためのプロトコル。HTTPSは、HTTPにセキュリティ機能を追加したもので、データの暗号化を行う。
+              </div>
+            </div>
+          </dd>
+        </div>
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_3">6-3.関連用語</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">サーチエンジン</div>
+              <div class = "item__description">
+                インターネット上の情報を検索するためのツール。「検索エンジン」とも呼ばれる。<br>
+                代表的なサーチエンジンにGoogle、Yahoo!、Bingなどがある。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">Webアプリケーション</div>
+              <div class = "item__description">
+                Webブラウザを通じて利用されるアプリケーションソフトウェア。「ウェブアプリ」とも呼ばれる。<br>
+                代表的なものに動画再生・共有の「YouTube」、メールクライアントの「Gmail」、通話・チャットアプリの「Skype」などがある。
               </div>
             </div>
           </dd>

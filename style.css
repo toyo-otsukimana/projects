@@ -938,7 +938,7 @@ strong {
 .glossary-wrapper{
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 70px auto 0;
 }
 
 .glossary-title,
@@ -968,6 +968,7 @@ strong {
   font-size: 23px;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #000080;
 }
 
 .item__description{
