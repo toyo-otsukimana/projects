@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMLリファレンス</title>
+    <title>HTML Webページ作成ガイド</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
+    <div class="site-header-title">
+      Webページ制作ガイド
+    </div>
     <ul class="nav-list">
-      <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">HTML</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">CSS</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">環境構築</a></li>
+      <li class="nav-item"><a href="process.html" class="nav-link">制作手順</a></li>
+      <li class="nav-item"><a href="glossary.html" class="nav-link">用語集</a></li>
+      <li class="nav-item"><a href="html-reference.html" class="nav-link">HTML</a></li>
+      <li class="nav-item"><a href="css-reference.html" class="nav-link">CSS</a></li>
       <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">用語集</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">手順</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Q&A</a></li>
+      <li class="nav-item"><a href="Q&A.html" class="nav-link">Q&A</a></li>
       <!--必要に応じて項目を追加します。-->
     </ul>
   </header>
 
   <div class="html-main">
     <div class="html-main-title">
-      <h1 class="html-h1">HTMLリファレンス</h1> 
+      <h1 class="html-title">HTMLリファレンス</h1> 
     </div>
 
     <div class="html-about">
@@ -34,7 +38,7 @@
 
       <div class="html-contents">
         <div class="html-content-composition">
-          <h3>HTMLの基本構造</h3>
+          <h3 class="html-title">HTMLの基本構造</h3>
           <p>HTML文書は、次のような基本的な構造を持っています。</p>
 
           <div class="structure">
@@ -44,69 +48,62 @@
 <!-------------------------よく使われる要素---------------------------------------------------------------------------------------------------------------------------->
 <!-------------------------よく使われる要素---------------------------------------------------------------------------------------------------------------------------->
         <div class="element">
-          <h3>よく使われるHTML要素</h3>
+          <h3 class="html-title">よく使われるHTML要素</h3>
             <dl class="accordion js-accordion">
               <div class="accordion__item js-accordion-trigger is-active">
                 <dt class="accordion__title">&lt;html&gt;</dt>
                 <dd class="accordion__content is-open">
                   HTML文書のルート要素<br>
-                  使い方:　
-                  &lt;html&gt;&lt;/html&gt;
+                  使い方:<br>
+                  <span class="code-sample">&lt;html&gt;&lt;/html&gt;</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;head&gt;</dt>
                 <dd class="accordion__content ">
                   メタデータを含むセクション<br>
-                  使い方:　
-                  &lt;head&gt;&lt;/head&gt;
+                  使い方:<br>
+                  <span class="code-sample">&lt;head&gt;&lt;/head&gt;</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;title&gt;</dt>
                 <dd class="accordion__content ">
                   ドキュメントのタイトル<br>
-                  使い方:　
-                  &lt;title&gt;&lt;/title&gt;
+                  使い方:<br>
+                  <span class="code-sample">&lt;title&gt;&lt;/title&gt;</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;meta&gt;</dt>
                 <dd class="accordion__content ">
                   メタデータ<br>
-                  使い方:　&lt;meta&gt;　(閉じタグ不要)
+                  使い方:<br>
+                  <span class="code-sample">&lt;meta&gt;　(閉じタグ不要)</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;link&gt;</dt>
                 <dd class="accordion__content ">
                   外部リソースへのリンク<br>
-                  使い方:　
-                  &lt;link&gt;　(閉じタグ不要)
+                  使い方:<br>
+                  <span class="code-sample">&lt;link&gt;　(閉じタグ不要)</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;script&gt;</dt>
                 <dd class="accordion__content ">
                   JavaScriptのコードを埋め込む<br>
-                  使い方:　
-                  &lt;script&gt;&lt;/script&gt;
+                  使い方:<br>
+                  <span class="code-sample">&lt;script&gt;&lt;/script&gt;</span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;body&gt;</dt>
                 <dd class="accordion__content ">
                   ドキュメントの本文<br>
-                  使い方:　
-                  &lt;body&gt;&lt;/body&gt;
-                </dd>
-              </div>
-              <div class="accordion__item js-accordion-trigger">
-                <dt class="accordion__title">&lt;html&gt;</dt>
-                <dd class="accordion__content ">
-                  HTML文書のルート要素<br>
-                  使い方:　
-                  &lt;html&gt;&lt;/html&gt;
+                  使い方:<br>
+                  <span class="code-sample">&lt;body&gt;&lt;/body&gt;</span>
                 </dd>
               </div>
             </dl>
@@ -114,42 +111,20 @@
 <!-------------------------主要タグ---------------------------------------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ---------------------------------------------------------------------------------------------------------------------------->
         <div class="attribute">
-          <h3>HTMLの主要タグ</h3>
+          <h3 class="html-title">HTMLの主要タグ</h3>
             <dl class="accordion js-accordion">
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;h1&gt;〜&lt;h6&gt;</dt>
                 <dd class="accordion__content ">
                   &lt;h1&gt;が最も大きく、&lt;h6&gt;が最も小さい見出しです。<br>
                   使い方:　<br>
-                    <div class="code-container">
-                      <span class="side">&lt;h1&gt;</span>
-                        <h1 class="html-h1">サンプル</h1>
-                      <span class="side">&lt;/h1&gt;</span>
-                    </div>
-                    <div class="code-container">
-                      <span class="side">&lt;h2&gt;</span>
-                        <h2>サンプル</h2>
-                      <span class="side">&lt;/h2&gt;</span>
-                    </div>
-                    <div class="code-container">
-                      <span class="side">&lt;h3&gt;</span>
-                        <h3>サンプル</h3>
-                      <span class="side">&lt;/h3&gt;</span>
-                    </div>
-                    <div class="code-container">
-                      <span class="side">&lt;h4&gt;</span>
-                      <h4>サンプル</h4>
-                      <span class="side">&lt;/h4&gt;</span>
-                    </div>
-                    <div class="code-container">
-                      <span class="side">&lt;h5&gt;</span>
-                        <h5>サンプル</h5>
-                      <span class="side">&lt;/h5&gt;</span>
-                    </div>
-                    <div class="code-container">
-                      <span class="side">&lt;h6&gt;</span>
-                        <h6>サンプル</h6>
-                      <span class="side">&lt;/h6&gt;</span>
+                    <div class="code-container-title_tag">
+                      <h1>&lt;h1&gt; サンプル &lt;/h1&gt;</h1>
+                      <h2>&lt;h2&gt; サンプル &lt;/h2&gt;</h2>
+                      <h3>&lt;h3&gt; サンプル &lt;/h3&gt;</h3>
+                      <h4>&lt;h4&gt; サンプル &lt;/h4&gt;</h4>
+                      <h5>&lt;h5&gt; サンプル &lt;/h5&gt;</h5>
+                      <h6>&lt;h6&gt; サンプル &lt;/h6&gt;</h6>
                     </div>
                 </dd>
               </div>
@@ -158,30 +133,25 @@
                 <dd class="accordion__content ">段落を表します。文章を区切るときに使います。<br>
                   使い方:　<br>
                   <div class="code-container">
-                    <span class="side">&lt;p&gt;</span>
-                      <p>サンプル</p>
-                    <span class="side">&lt;/p&gt;</span>
-                  </div>
-                  <div class="code-container">
-                    <span class="side">&lt;p&gt;</span>
-                      <p>サンプル</p>
-                    <span class="side">&lt;/p&gt;</span>
+                      <p class="p-sample">&lt;p&gt; サンプル1 &lt;/p&gt;</p>
+                      <p class="p-sample">&lt;p&gt; サンプル2 &lt;/p&gt;</p>
                   </div>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">&lt;a&gt;</dt>
                 <dd class="accordion__content ">リンクを表します。他のページへのリンクや、同じページ内の場所へのリンクを作成します。<br>
-                  使い方:　
-                  &lt;a&gt;リンクだよ&lt;/a&gt;<br><br>
-                  関連する属性<br>
+                  使い方:<br>
+                  <span class="code-sample">&lt;a&gt;&lt;/a&gt;</span><br><br>
+                  <span class="anderline">関連する属性</span><br>
                   <ul>
                     <li>href: リンク先のURL</li>
                     <li>target: リンク先の開き方 (_blank, _self, _parent, _top)</li>
                     <li>rel: リンクの関係性 (nofollow, noopener, noreferrer)</li>
                   </ul><br>
-                  使用例:　
-                  &lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Visit Example&lt;/a&gt;
+                  使用例:<br>
+                  <span class="code-sample">
+                  &lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Visit Example&lt;/a&gt;</span>
                 </dd>
               </div>
             </dl>
@@ -189,27 +159,33 @@
 <!-------------------------主要タグ( 画像 )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( 画像 )-------------------------------------------------------------------------------------------->
             <div class="attribute-img">
-              <h4>主要タグ( 画像 )</h4>
+              <h4 class="html-title">主要タグ( 画像 )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;img&gt;</dt>
                   <dd class="accordion__content ">画像を表示します。src属性に画像のURLを指定します。<br>
-                    使い方:　
-                    &lt;img src="image.png(jpgn) alt="代替テキスト"&gt;<br><br>
-                    関連する属性<br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;img src="image.png(jpgn) alt="代替テキスト"&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 画像のURL</li>
                       <li>alt: 代替テキスト</li>
                     </ul><br>
                     使用例<br>
-                    &lt;img src="image.jpg" alt="Sample Image" width="600" height="400"&gt;
+                    <span class="code-sample">
+                      &lt;img src="image.jpg" alt="Sample Image" width="600" height="400"&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;figure&gt;</dt>
                   <dd class="accordion__content ">画像や図、イラストレーション、チャートなどをグループ化するために使用されます。<br>これにより、図やメディアが文書の中で意味的に関連付けられ、コンテンツの理解が容易になります。<br>
-                    使い方:　
-                    &lt;figure&gt;&lt;/figure&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;figure&gt;&lt;/figure&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -217,27 +193,33 @@
 <!-------------------------主要タグ( リスト )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( リスト )-------------------------------------------------------------------------------------------->
             <div class="attribute-list">
-              <h4>主要タグ( リスト )</h4>
+              <h4 class="html-title">主要タグ( リスト )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;ul&gt;</dt>
                   <dd class="accordion__content ">順不同リストを作成します。<br>
-                    使い方:　
-                    &lt;ul&gt;&lt;/ul&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;ul&gt;&lt;/ul&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;ol&gt;</dt>
                   <dd class="accordion__content ">順序付きリストを作成します。<br>
-                    使い方:　
-                    &lt;ol&gt;&lt;/ol&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;ol&gt;&lt;/ol&gt;
+                    </span>
                   </dd>
                 </div>
                   <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;li&gt;</dt>
                   <dd class="accordion__content ">リスト項目<br>
-                    使い方:　
-                    &lt;li&gt;&lt;/li&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;li&gt;&lt;/li&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -245,28 +227,34 @@
 <!-------------------------主要タグ( フォーム )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( フォーム )-------------------------------------------------------------------------------------------->
             <div class="attribute-form">
-              <h4>主要タグ( フォーム )</h4>
+              <h4 class="html-title">主要タグ( フォーム )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;form&gt;</dt>
                   <dd class="accordion__content ">フォームを作成<br>
-                    使い方:　
-                    &lt;form&gt;&lt;/form&gt;<br><br>
-                    関連する属性<br>
+                    使い方:<br>
+                    <span class="code-sample">
+                    &lt;form&gt;&lt;/form&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>action: フォームの送信先URL</li>
                       <li>method: フォームの送信方法 (GET, POST)</li>
                     </ul><br>
-                    使用例:　
+                    使用例:<br>
+                    <span class="code-sample">
                     &lt;form action="/submit" method="POST"&gt;&lt;/form&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;input&gt;</dt>
-                  <dd class="accordion__content ">入力フィールド<br>
-                    使い方:　
-                    &lt;input&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content">HTMLで使用される要素の一つで、ユーザーがウェブページ上でテキストやデータを入力するためのコントロールを提供します。主にフォーム（form）要素内で使用され、ユーザーがテキストボックスやラジオボタン、チェックボックス、ドロップダウンリストなどの形式で情報を入力することを可能にします。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;input&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: 入力フィールドの種類 (text, password, submit, checkbox, radio, fileなど)</li>
                       <li>name: フィールド名</li>
@@ -274,16 +262,20 @@
                       <li>placeholder: 入力のヒント</li>
                       <li>required: 入力必須</li>
                     </ul><br>
-                    使用例:　
-                    &lt;input type="text" name="username" placeholder="Enter your username" required&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;input type="text" name="username" placeholder="Enter your username" required&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;textarea&gt;</dt>
-                  <dd class="accordion__content ">テキストエリア<br>
-                    使い方:　
-                    &lt;textarea&gt;&lt;/textarea&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLで使用される要素の一つで、ユーザーが複数行のテキストを入力できるようにするためのコントロールです。主にフォームの一部として使用され、ウェブページ上でテキストの入力領域を提供します。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;textarea&gt;&lt;/textarea&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: 入力フィールドの種類 (text, password, submit, checkbox, radio, fileなど)</li>
                       <li>name: フィールド名</li>
@@ -291,44 +283,58 @@
                       <li>cols: 列数</li>
                       <li>placeholder: 入力のヒント</li>
                     </ul><br>
-                    使用例:　
-                    &lt;textarea name="message" rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;textarea name="message" rows="4" cols="50" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;button&gt;</dt>
-                  <dd class="accordion__content ">ボタン<br>
-                    使い方:　
-                    &lt;button&gt;&lt;/button&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLでユーザーがクリックして何らかのアクションを起こすことができるボタンを定義するための要素です。通常、フォームの送信やJavaScriptの関数呼び出しなど、様々な操作に使用されます。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;button&gt;&lt;/button&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>type: ボタンの種類 (button, submit, reset)</li>
                       <li>name: フィールド名</li>
                       <li>value: 初期値</li>
                     </ul><br>
-                    使用例:　
-                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;label&gt;</dt>
-                  <dd class="accordion__content ">フォームラベル<br>
-                    使い方:　
-                    &lt;label&gt;&lt;/label&gt;
+                  <dd class="accordion__content ">HTMLで使用されるタグの一つです。このタグは、フォームコントロール（input要素やtextarea要素など）のラベルを定義するために使われます。具体的には、フォームの各入力項目の説明や目的をユーザーに提示するために利用されます。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;label&gt;&lt;/label&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;select&gt;</dt>
-                  <dd class="accordion__content ">ドロップダウンリスト<br>
-                    使い方:　
-                    &lt;select&gt;&lt;/select&gt;
+                  <dd class="accordion__content ">
+                    要素は、HTMLで使用されるフォーム部品の一種です。通常、ドロップダウンリストとして知られており、ユーザーがリストから1つ以上の選択肢を選ぶことができます。<br><br>
+                    &lt;select&gt;要素は、&lt;option&gt;要素の子要素として使用され、各&lt;option&gt;要素は選択肢のテキストを表示し、value属性を通じて送信される値を定義します。ユーザーが選択した値は、フォーム送信時にサーバーに送信されるため、フォーム処理やデータ収集に便利です。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;select&gt;&lt;/select&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;option&gt;</dt>
-                  <dd class="accordion__content ">リスト項目<br>
-                    使い方:　
-                    &lt;option&gt;&lt;/option&gt;
+                  <dd class="accordion__content ">選択肢や選択の自由を意味します。特定の状況やコンテキストにおいて、複数の選択肢の中から1つを選ぶことができることを指します。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;option&gt;&lt;/option&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -336,73 +342,70 @@
 <!-------------------------主要タグ( テーブル )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( テーブル )-------------------------------------------------------------------------------------------->
             <div class="attribute-table">
-              <h4>主要タグ( テーブル )</h4>
+              <h4 class="html-title">主要タグ( テーブル )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;table&gt;</dt>
-                  <dd class="accordion__content ">テーブルを作成<br>
-                    使い方:　
-                    &lt;table&gt;&lt;/table&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLで使用されるタグで、表を作成するために利用されます。このタグを使用することで、複数の行と列からなる表を作成し、データを整理して表示することができます。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;table&gt;&lt;/table&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>border: テーブルの枠線の幅</li>
                     </ul><br>
-                    使用例:　
-                    &lt;table border="1"&gt;&lt;/table&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;table border="1"&gt;&lt;/table&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;tr&gt;</dt>
-                  <dd class="accordion__content ">テーブルの行<br>
-                    使い方:　
-                    &lt;tr&gt;&lt;/tr&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLで使用されるタグで、"table row"（表の行）の意味を持ちます。このタグは、表（テーブル）の中で1つの行を定義するために使用されます。通常、&lt;table&gt;タグの中に配置され、その中に&lt;td&gt;（table data、表のデータ）または&lt;th&gt;（table header、表の見出し）というタグが入っています。<br><br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;tr&gt;&lt;/tr&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>rowspan: 行の結合</li>
                     </ul><br>
-                    使用例:　
-                    &lt;tr rowspan="2"&gt;&lt;/tr&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;tr rowspan="2"&gt;&lt;/tr&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;td&gt;</dt>
-                  <dd class="accordion__content ">テーブルのセル<br>
-                    使い方:　
-                    &lt;td&gt;&lt;/td&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">はHTMLで使用されるタグで、"table data"（表のデータ）を意味します。具体的には、HTMLの表（&lt;table&gt;要素）内で使用され、各セル（セル）にデータを表示するために使用されます。<br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;td&gt;&lt;/td&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>colspan: 列の結合</li>
                     </ul><br>
-                    使用例:　
-                    &lt;tr colspan="2"&gt;&lt;/tr&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;tr colspan="2"&gt;&lt;/tr&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;th&gt;</dt>
-                  <dd class="accordion__content ">テーブルのヘッダーセル<br>
-                    使い方:　
-                    &lt;th&gt;&lt;/th&gt;
-                  </dd>
-                </div>
-                <div class="accordion__item js-accordion-trigger">
-                  <dt class="accordion__title">&lt;thead&gt;</dt>
-                  <dd class="accordion__content ">テーブルヘッダー<br>
-                    使い方:　
-                    &lt;thead&gt;&lt;/thead&gt;
-                  </dd>
-                </div>
-                <div class="accordion__item js-accordion-trigger">
-                  <dt class="accordion__title">&lt;tbody&gt;</dt>
-                  <dd class="accordion__content ">テーブルボディ<br>
-                    使い方:　
-                    &lt;tbody&gt;&lt;/tbody&gt;
-                  </dd>
-                </div>
-                <div class="accordion__item js-accordion-trigger">
-                  <dt class="accordion__title">&lt;tfoot&gt;</dt>
-                  <dd class="accordion__content ">テーブルフッター<br>
-                    使い方:　
-                    &lt;tfoot&gt;&lt;/tfoot&gt;
+                  <dd class="accordion__content ">HTMLで使用されるタグで、表（テーブル）の見出し行を定義するために使います。具体的には以下のような役割があります。<br>
+                    <ol class="ol-number">
+                      <li>表の見出し行の定義: &lt;th&gt;タグは通常、表の最初の行または列に配置され、そのセルが表のどの部分に属するかを示します。例えば、列の見出しや行の見出しを指定するために使用されます。</li>
+                      <li>スタイルと意味付け: &lt;th&gt;タグには、デフォルトで太字のテキストスタイルが適用される場合がありますが、CSS（Cascading Style Sheets）を使用してさらにスタイルをカスタマイズすることができます。</li>
+                    </ol>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;th&gt;&lt;/th&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -410,55 +413,69 @@
 <!-------------------------主要タグ( セクション等 )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( セクション等 )-------------------------------------------------------------------------------------------->
             <div class="attribute-section">
-              <h4>主要タグ( セクションなど )</h4>
+              <h4 class="html-title">主要タグ( セクションなど )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;header&gt;</dt>
                   <dd class="accordion__content ">ヘッダーセクション<br>
-                    使い方:　
-                    &lt;header&gt;&lt;/header&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;header&gt;&lt;/header&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;nav&gt;</dt>
                   <dd class="accordion__content ">ナビゲーションリンク<br>
-                    使い方:　
-                    &lt;nav&gt;&lt;/nav&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;nav&gt;&lt;/nav&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;main&gt;</dt>
                   <dd class="accordion__content ">メインコンテンツ<br>
-                    使い方:　
-                    &lt;main&gt;&lt;/main&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;main&gt;&lt;/main&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;footer&gt;</dt>
                   <dd class="accordion__content ">フッターセクション<br>
-                    使い方:　
-                    &lt;footer&gt;&lt;/footer&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;footer&gt;&lt;/footer&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;article&gt;</dt>
                   <dd class="accordion__content ">独立したコンテンツ<br>
-                    使い方:　
-                    &lt;article&gt;&lt;/article&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;article&gt;&lt;/article&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;aside&gt;</dt>
                   <dd class="accordion__content ">サイドコンテンツ<br>
-                    使い方:　
-                    &lt;aside&gt;&lt;/aside&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;aside&gt;&lt;/aside&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;div&gt;</dt>
                   <dd class="accordion__content ">汎用コンテナ<br>
-                    使い方:　
-                    &lt;div&gt;&lt;/div&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;div&gt;&lt;/div&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -466,50 +483,77 @@
 <!-------------------------主要タグ( マルチメディア関連 )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( マルチメディア関連 )-------------------------------------------------------------------------------------------->
             <div class="attribute-media">
-              <h4>主要タグ( マルチメディア )</h4>
+              <h4 class="html-title">主要タグ( マルチメディア )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;audio&gt;</dt>
-                  <dd class="accordion__content ">音声<br>
-                    使い方:　
-                    &lt;audio&gt;&lt;/audio&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLで音声ファイルを埋め込むために使用されます。このタグを使うと、ウェブページ上で音声を再生することができます。<br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;audio&gt;&lt;/audio&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 音声ファイルのURL</li>
                       <li>controls: コントロール表示</li>
+                      <li>autoplay: 音声を自動再生します。</li>
+                      <li>loop: 音声を繰り返し再生します。</li>
+                      <li>muted: 音声をミュートにします.</li>
                     </ul><br>
-                    使用例:　
-                    &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+                    </span><br><br>
+                    <span class="noDL">Chromeでダウンロードを禁止にするには</span><br>
+                    Google Chromeではデフォルトで音声の「ダウンロード」ボタンが表示されます。<br>
+                    controlslist="nodownload"を指定すると、このダウンロードボタンを非表示にできます。<br>
+                    <span class="code-sample">&lt;audio controls <span class="color-red">controlslist="nodownload"</span> src="~"&gt;&lt;/audio&gt;</span><br><br>
+                    <span class="color-red">※</span>基本的にautoplayは使うべきではありません。「静かな電車の中で意図せずスマートフォンから音が再生されてしまう」のような不快なユーザー体験につながる可能性があるため注意が必要です。<br>
+                    <span class="color-red">※</span>主要なモバイル端末のブラウザでは上記のような理由からautoplayに対応していません。
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;video&gt;</dt>
-                  <dd class="accordion__content ">動画<br>
-                    使い方:　
-                    &lt;video&gt;&lt;/video&gt;<br><br>
-                    関連する属性<br>
+                  <dd class="accordion__content ">HTMLで動画を埋め込むために使用されます。このタグを使うと、ウェブページ上で動画を再生することができます。<br>
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;video&gt;&lt;/video&gt;
+                    </span><br><br>
+                    <span class="anderline">関連する属性</span><br>
                     <ul>
                       <li>src: 音声ファイルのURL</li>
                       <li>controls: コントロール表示</li>
                       <li>width: 幅</li>
                       <li>height: 高さ</li>
+                      <li>autoplay: 動画を自動再生します。</li>
+                      <li>loop: 動画を繰り返し再生します。</li>
+                      <li>muted: 動画の音声をミュートにします。</li>
+                      <li>poster: 動画が再生される前に表示する画像のURLを指定します。</li>
                     </ul><br>
-                    使用例:　
-                    &lt;video src="video.mp4" controls width="600" height="400"&gt;&lt;/video&gt;
+                    使用例:<br>
+                    <span class="code-sample">
+                      &lt;video src="video.mp4" controls width="600" height="400"&gt;&lt;/video&gt;
+                    </span><br><br>
+                    <span class="color-red">※</span>基本的にautoplayは使うべきではありません。「静かな電車の中で意図せずスマートフォンから音が再生されてしまう」のような不快なユーザー体験につながる可能性があるため注意が必要です。<br>
+                    <span class="color-red">※</span>主要なモバイル端末のブラウザでは上記のような理由からautoplayに対応していません。
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;source&gt;</dt>
                   <dd class="accordion__content ">メディアソース<br>
-                    使い方:　
-                    &lt;source&gt;&lt;/source&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;source&gt;&lt;/source&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;track&gt;</dt>
                   <dd class="accordion__content ">テキストトラック<br>
-                    使い方:　
-                    &lt;track&gt;&lt;/track&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;track&gt;&lt;/track&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -517,27 +561,33 @@
 <!-------------------------主要タグ( その他タグ )-------------------------------------------------------------------------------------------->
 <!-------------------------主要タグ( その他タグ )-------------------------------------------------------------------------------------------->
             <div class="attribute-others">
-              <h4>主要タグ( その他のよく使われるタグ )</h4>
+              <h4 class="html-title">主要タグ( その他のよく使われるタグ )</h4>
               <dl class="accordion js-accordion">
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;span&gt;</dt>
                   <dd class="accordion__content ">インラインコンテナ<br>
-                    使い方:　
-                    &lt;span&gt;&lt;/span&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;span&gt;&lt;/span&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;iframe&gt;</dt>
                   <dd class="accordion__content ">インラインフレーム<br>
-                    使い方:　
-                    &lt;iframe&gt;&lt;/iframe&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;iframe&gt;&lt;/iframe&gt;
+                    </span>
                   </dd>
                 </div>
                 <div class="accordion__item js-accordion-trigger">
                   <dt class="accordion__title">&lt;canvas&gt;</dt>
                   <dd class="accordion__content ">グラフィックスの描画領域<br>
-                    使い方:　
-                    &lt;canvas&gt;&lt;/canvas&gt;
+                    使い方:<br>
+                    <span class="code-sample">
+                      &lt;canvas&gt;&lt;/canvas&gt;
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -545,41 +595,51 @@
 <!-------------------------共通属性-------------------------------------------------------------->
 <!-------------------------共通属性-------------------------------------------------------------->
         <div class="tag">
-          <h3>属性</h3>
+          <h3 class="html-title">属性</h3>
             <dl class="accordion js-accordion">
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">id</dt>
                 <dd class="accordion__content ">id: 要素の一意の識別子を指定します。<br>
-                  使い方:　
-                  &lt;div id="main-content"&gt;&lt;/div&gt;
+                  使い方:<br>
+                  <span class="code-sample">
+                    &lt;div id="main-content"&gt;&lt;/div&gt;
+                  </span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">class</dt>
                 <dd class="accordion__content ">要素に一つまたは複数のクラス名を指定します。<br>
-                  使い方:　
-                  &lt;p class="text-bold text-large"&gt;&lt;/p&gt;
+                  使い方:<br>
+                  <span class="code-sample">
+                    &lt;p class="text-bold text-large"&gt;&lt;/p&gt;
+                  </span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">style</dt>
                 <dd class="accordion__content ">インラインスタイルを指定します。<br>
-                  使い方:　
-                  &lt;h1 style="color: blue; font-size: 24px;"&gt;&lt;/h1&gt;
+                  使い方:<br>
+                  <span class="code-sample">
+                    &lt;h1 style="color: blue; font-size: 24px;"&gt;&lt;/h1&gt;
+                  </span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">title</dt>
                 <dd class="accordion__content ">要素にツールチップを表示します。<br>
-                  使い方:　
-                  &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+                  使い方:<br>
+                  <span class="code-sample">
+                    &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+                  </span>
                 </dd>
               </div>
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">data-*</dt>
                 <dd class="accordion__content ">カスタムデータ属性。JavaScriptでアクセス可能です。<br>
-                  使い方:　
+                  使い方:<br>
+                  <span class="code-sample">
                   &lt;div data-user-id="12345"&gt;&lt;/div&gt;
+                  </span>
                 </dd>
               </div>
             </dl>
@@ -587,14 +647,18 @@
       </div>
     </div>
   </div>
+
   <footer class="site-footer">
-    <div class="footer-copy">&copy;Web制作ガイド</div>
+    <div class="footer-copy">&copy;Webページ制作ガイド</div>
     <ul class="footer-nav-list">
       <li class="footer-nav-item"><a href="#" class="footer-nav-link">サイトマップ</a></li>
       <li class="footer-nav-item"><a href="#" class="footer-nav-link">プライバシーポリシー</a></li>
       <li class="footer-nav-item"><a href="#" class="footer-nav-link">利用規約</a></li>
     </ul>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+    <script src="./js/navigation.js"></script>
     <script src="./js/code.js"></script>
     <script src="./js/accordion.js"></script>
 </body>

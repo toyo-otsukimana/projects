@@ -16,42 +16,29 @@ body {
   height: 100vh;
 }
 
-.main-wrapper {
-  height: calc(100% - 50px - 50px);
-  text-align: center;
-  padding: 50px 20px;
-  flex: 1;
-}
-
-.main-title {
-  font-size: 32px;
-  color: #000080;
-  margin-bottom: 10px;
-}
-
-.main-subtitle {
-  font-size: 24px;
-  color: #000080;
-  margin-bottom: 20px;
-}
-
-.main-description {
-  font-size: 16px;
-  color: #000080;
-  line-height: 1.5;
-}
 
 /*==============================================================================================================
       header
 ================================================================================================================*/
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #000080; /* ダークブルー */
   padding: 10px 0;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 65px;
+  z-index: 100;
+}
+
+.site-header-title {
+  width: 100%;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav-list {
@@ -64,15 +51,23 @@ body {
   margin: 0 15px;
 }
 
-.nav-link {
-  color: white;
+.nav-list a{
+  color: #fff;
+}
+
+.nav-list li a.active {
+  color: #f7c736;
+  font-weight: bold;
+
+
 }
 
 
 /* メインコンテンツ */
 .main-wrapper {
-  height: calc(100% - 50px - 50px);
+  height: calc(100% - 50px);
   text-align: center;
+  margin-top: 85px;
   padding: 50px 20px;
   flex: 1;
 }
@@ -95,20 +90,75 @@ body {
   line-height: 1.5;
 }
 
+.main-exp-tab {
+  width: 50%;
+  border-radius: 5px;
+  border: 3px solid #000080;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.main-exp-link {
+  color: #0073e6;
+}
+
+.dli-caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.64952em 0.375em;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+/*==============================================================================================================
+      footer
+================================================================================================================*/
+.site-footer {
+  height: 50px;
+  background-color: #000080;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-copy {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-nav-link {
+  color: white;
+  font-size: 13px;
+}
+
 /*==============================================================================================================
       HTMLリファレンスーmain
 ================================================================================================================*/
 
 .html-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 20px;
 }
 
-.html-main h1, .html-main h2, .html-main h3,.html-main h4{
+.html-title{
   width: 75%;
   margin: 15px auto 0;
 }
@@ -118,6 +168,7 @@ body {
   width: 75%;
   padding: 10px 0 15px 20px;
   margin: 0 auto;
+  color: #333;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -150,7 +201,8 @@ body {
       属性
 ------------------------------------------------------------------------------------------------------------------------*/
 .element, .attribute,.attribute-img,.attribute-list,
-.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag {
+.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
+.css-term, .css-properties {
   width: 100%;
   margin: 100px auto;
 }
@@ -207,6 +259,7 @@ body {
   display: none;
   cursor: pointer;
   line-height: 2rem;
+  color: #333;
 }
 
 .accordion__content.is-open {
@@ -223,59 +276,279 @@ body {
   opacity: 0;
 }
 
-.code-container {
-  width:50%;
-  height: 45px;
-  margin-left: 30px;
-
-}
-
-.code-container h6{
-  height: 30px;
-}
-
-.code-container h1, .code-container h2, .code-container h3,
- .code-container h4, .code-container h5, .code-container h6, .code-container p{
-  width: 25%;
+.p-sample {
   display: inline-block;
 }
 
+.code-container {
+  width:100%;
+  height: 100px;
+  margin: 0 auto;
+}
 
-/*==============================================================================================================
-      footer
-================================================================================================================*/
-.site-footer {
-  height: 50px;
-  background-color: #000080;
-  padding: 10px 0;
+.code-container-title_tag {
+  width:100%;
+  height: 300px;
+  margin: 0;
+  padding-left:  30px;
+}
+
+.color-red {
+  color: #ff6666;
+}
+
+.anderline {
+  border-bottom: 1px solid #3abec1;
+}
+
+.noDL {
+  border-bottom: 2px solid #3abec1;
+}
+
+.code-sample {
+  background-color: #333;
+  padding: 6px 10px;
+  color: #ccc;
+  letter-spacing: 0.1em;
+}
+
+.ol-number li{
+  list-style: decimal;
+  
+}
+
+/*--------------------------------------------------------------------------
+      CSSリファレンス
+--------------------------------------------------------------------------*/
+.css-about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.css-explanation p,
+.css-content-composition p{
+  padding: 10px 0 15px 20px;
+}
+
+.css-main {
+  width: 80%;
+  margin: 85px auto 0;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+}
+
+.css-main h1, .css-main h2, .css-main h3,.css-main h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+
+.css-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+/* CSSの記述の部分 */
+.css-contents {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.css-structure, 
+.css-samplecode{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+
+#cssCodeBlock1,
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
   color: white;
+}
+
+#cssCodeBlock2,
+#cssCodeBlock3,
+#cssCodeBlock4, 
+#cssCodeBlock5{
+  padding: 3px 5px;
+}
+
+#cssCodeBlock2 span,
+#cssCodeBlock3 span,
+#cssCodeBlock4 span,
+#cssCodeBlock5 span {
+  padding: 2px;
+  background-color: #666666;
+  color: #ff9999;
+  font-weight: bold;
+}
+
+/* 主要プロパティの例で使うdiv */
+.css-properties-sample {
+  height: auto;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
   text-align: center;
+  margin: 0 auto 10px auto;
 }
 
-.footer-copy {
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-
-.footer-nav-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-nav-item {
-  margin: 0 15px;
-}
-
-.footer-nav-link {
+/* heightとwidthの例 */
+.css-properties-heightwidth-sample {
+  height: 200px;
+  width: 80%;
+  border: 2px solid #ccc;
   color: white;
-  font-size: 13px;
+  background-color: #009999;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
 }
 
+.css-properties-heightwidth-sample p {
+  margin: auto;
+}
 
-/* webサイト制作の手順 */
+/* font-sizeの例 */
+.fontsize-sample .fontsize-sample-top {
+  font-size: 24px;
+  margin: 0 auto;
+}
 
+.fontsize-sample .fontsize-sample-bottom {
+  font-size: 16px;
+  margin: 0 auto;
+}
 
+/* font-weightの例 */
+.fontweight-sample .fontweight-sample-top {
+  font-weight: 1000;
+}
+
+.fontweight-sample .fontweight-sample-bottom {
+  font-weight: normal;
+}
+
+/* font-familyの例 */
+.fontfamily-sample .fontfamily-sample-top {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+}
+
+.fontfamily-sample .fontfamily-sample-bottom {
+  font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* text-decorationの例 */
+.textdecoration-sample .textdecoration-sample-top {
+  text-decoration: underline;
+}
+
+.textdecoration-sample .textdecoration-sample-bottom {
+  text-decoration: line-through;
+}
+
+/* colorの例 */
+.color-sample .color-sample-top {
+  color: red;
+}
+
+.color-sample .color-sample-bottom {
+  color: #009999;
+}
+
+/* background-colorの例 */
+.backgroundcolor-sample .backgroundcolor-sample-top {
+  padding: 3px 5px;
+  color: white;
+  background-color: red;
+}
+
+.backgroundcolor-sample .backgroundcolor-sample-bottom {
+  padding: 3px 5px;
+  color: white;
+  background-color: #009999;
+}
+
+/* margin,padding,borderの例 */
+.marginpaddingborder-sample-mar {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.marginpaddingborder-sample-pad, 
+.marginpaddingborder-sample-bor,
+.marginpaddingborder-sample-content {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.marginpaddingborder-sample-bor {
+  border: 1px solid #ff6666;
+  padding-bottom: 30px;
+  background-color: #ff9999;
+}
+
+.marginpaddingborder-sample-pad {
+  border: 1px solid #cc99ff;
+  padding-bottom: 30px;
+  background-color: #99ccff;
+}
+
+.marginpaddingborder-sample-content {
+  border: 3px dotted #003399;
+}
+
+/* border-radiusの例 */
+.radius-sample {
+  width: 80%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  background-color: #009999;
+  border-radius: 10px;
+}
+
+/* displayの例 */
+.display-sample-top div,
+.display-sample-bottom div{
+  height: 100px;
+  width: 50%;
+  margin: 0 auto 10px auto;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.display-sample-a {
+  display: block;
+  margin: 0 auto 10px auto;
+  color: white;
+  background-color: #009999;
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.display-sample-none {
+  display: none;
+}
+
+/* ------------------------------------------------------------------
+      webサイト制作の手順 
+-------------------------------------------------------------------*/
 .process-main {
+  margin-top: 85px;
   width: 100%;
 }
 
@@ -574,7 +847,7 @@ strong {
 .question-wrapper {
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 85px auto 0;
   flex: 1;
 }
 
@@ -621,3 +894,105 @@ strong {
   padding: 5px 15px;
 }
 
+.numbered-list li{
+  list-style-type: decimal;
+}
+
+/*--------------------------------------------------------------------------
+      JavaScriptリファレンス
+--------------------------------------------------------------------------*/
+.javascript-main {
+  width: 80%;
+  margin: 85px auto 0;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 70px;
+}
+
+.javascript-main h1, h2, h3, h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.javascript-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+.javascript-structure{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+#jscodeBlock, #jscodeBlock1, #jscodeBlock2, #jscodeBlock3, #jscodeBlock4, 
+#jscodeBlock5, #jscodeBlock6, #jscodeBlock7, #jscodeBlock8, #jscodeBlock9, 
+#jscodeBlock10, #jscodeBlock11, #jscodeBlock12, #jscodeBlock13, #jscodeBlock14, 
+#jscodeBlock15, #jscodeBlock16, #jscodeBlock17, #jscodeBlock18, #jscodeBlock19,
+#jscodeBlock20, #jscodeBlock21, #jscodeBlock22, #jscodeBlock23, #jscodeBlock24,
+#jscodeBlock25, #jscodeBlock26, #jscodeBlock27, #jscodeBlock28, #jscodeBlock29,
+#jscodeBlock30, #jscodeBlock31, #jscodeBlock32, #jscodeBlock33, #jscodeBlock34,
+#jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
+#jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
+  color: white;
+}
+
+/*用語集ページのCSS*/
+.glossary-wrapper{
+  width: 80%;
+  padding: 35px 0;
+  margin: 85px auto 0;
+}
+
+.glossary-title,
+.glossary-about{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.glossary-about{
+  padding: 10px 0 15px 20px;
+}
+
+.glossary-section{
+  margin: 50px 0;
+}
+
+.section-head{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.content__items{
+  margin-top: 15px;
+}
+
+.item__title{
+  font-size: 23px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000080;
+}
+
+.item__description{
+  color: #222222;
+}
+
+.smart__title{
+  font-size: 20px;
+  color: #000080;
+}
+
+.smart__description{
+  padding: 0 15px;
+}
+
+.under-line{
+  border: none;
+  background-color: #a3a3cc;
+  height: 0.5px;
+}
