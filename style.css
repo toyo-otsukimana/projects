@@ -877,12 +877,12 @@ strong {
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .javascript-main h1, h2, h3, h4{
   width: 75%;
-  margin: 15px auto 0 auto;
+  margin: 15px auto 0;
 }
 
 .javascript-main p {
