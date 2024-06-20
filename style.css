@@ -145,11 +145,10 @@ body {
 
 .html-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 85px;
 }
 
 .html-title{
@@ -326,11 +325,10 @@ body {
 
 .css-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 85px;
 }
 
 .css-main h1, .css-main h2, .css-main h3,.css-main h4{
@@ -842,9 +840,8 @@ strong {
 .question-wrapper {
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 85px auto 0;
   flex: 1;
-  margin-top: 85px;
 }
 
 .question-card{
@@ -899,7 +896,7 @@ strong {
 --------------------------------------------------------------------------*/
 .javascript-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
@@ -941,8 +938,7 @@ strong {
 .glossary-wrapper{
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
-  margin-top: 85px;
+  margin: 85px auto 0;
 }
 
 .glossary-title,
