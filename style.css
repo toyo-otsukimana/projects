@@ -58,7 +58,7 @@ body {
 
 /* メインコンテンツ */
 .main-wrapper {
-  height: calc(100% - 50px - 50px);
+  height: calc(100% - 50px);
   text-align: center;
   margin-top: 85px;
   padding: 50px 20px;
@@ -81,6 +81,32 @@ body {
   font-size: 16px;
   color: #000080;
   line-height: 1.5;
+}
+
+.main-exp-tab {
+  width: 50%;
+  border-radius: 5px;
+  border: 3px solid #000080;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.main-exp-link {
+  color: #0073e6;
+}
+
+.dli-caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.64952em 0.375em;
+  border-top-color: currentColor;
+  border-bottom: 0;
 }
 
 /*==============================================================================================================
