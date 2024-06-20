@@ -76,13 +76,13 @@ body {
   margin: 0 15px;
 }
 
-.nav-link {
-  color: white;
+.nav-list a{
+  color: #fff;
 }
 
-nav li a.active    {
-  color:#fff;
-  background:#dd0000;
+.nav-list li a.active {
+  color: rgb(255, 208, 0); /* 任意の色に変更 */
+  font-weight: bold; /* 文字を太くする */
 }
 
 
