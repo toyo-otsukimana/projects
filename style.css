@@ -51,8 +51,15 @@ body {
   margin: 0 15px;
 }
 
-.nav-link {
-  color: white;
+.nav-list a{
+  color: #fff;
+}
+
+.nav-list li a.active {
+  color: #f7c736;
+  font-weight: bold;
+
+
 }
 
 
