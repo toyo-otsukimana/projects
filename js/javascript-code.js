@@ -396,8 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const jscodeBlock41 = document.getElementById('jscodeBlock41');
   const codeString =
   `let message = "Hello, world!";
-   console.log(message);
-  `;
+   console.log(message);`;
   jscodeBlock41.innerHTML = codeString;
 });
 
