@@ -890,7 +890,10 @@ strong {
   padding: 5px 15px;
 }
 
-<<<<<<< javascriptリファレンスページ
+.numbered-list li{
+  list-style-type: decimal;
+}
+
 /*--------------------------------------------------------------------------
       JavaScriptリファレンス
 --------------------------------------------------------------------------*/
@@ -932,10 +935,6 @@ strong {
 #jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
 #jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
   color: white;
-}
-=======
-.numbered-list li{
-  list-style-type: decimal;
 }
 
 /*用語集ページのCSS*/
@@ -993,4 +992,3 @@ strong {
   background-color: #a3a3cc;
   height: 0.5px;
 }
->>>>>>> main
