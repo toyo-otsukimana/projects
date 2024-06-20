@@ -55,11 +55,13 @@ body {
   color: #fff;
 }
 
+.nav-list li a:hover{
+  color: #f7c736;
+}
+
 .nav-list li a.active {
   color: #f7c736;
   font-weight: bold;
-
-
 }
 
 
