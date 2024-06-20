@@ -890,6 +890,54 @@ strong {
   padding: 5px 15px;
 }
 
+<<<<<<< javascriptリファレンスページ
+/*--------------------------------------------------------------------------
+      JavaScriptリファレンス
+--------------------------------------------------------------------------*/
+.javascript-main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 70px;
+}
+
+.javascript-main h1, h2, h3, h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.javascript-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+.javascript-structure{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+#jscodeBlock, #jscodeBlock1, #jscodeBlock2, #jscodeBlock3, #jscodeBlock4, 
+#jscodeBlock5, #jscodeBlock6, #jscodeBlock7, #jscodeBlock8, #jscodeBlock9, 
+#jscodeBlock10, #jscodeBlock11, #jscodeBlock12, #jscodeBlock13, #jscodeBlock14, 
+#jscodeBlock15, #jscodeBlock16, #jscodeBlock17, #jscodeBlock18, #jscodeBlock19,
+#jscodeBlock20, #jscodeBlock21, #jscodeBlock22, #jscodeBlock23, #jscodeBlock24,
+#jscodeBlock25, #jscodeBlock26, #jscodeBlock27, #jscodeBlock28, #jscodeBlock29,
+#jscodeBlock30, #jscodeBlock31, #jscodeBlock32, #jscodeBlock33, #jscodeBlock34,
+#jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
+#jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
+  color: white;
+}
+=======
+.numbered-list li{
+  list-style-type: decimal;
+}
+
 /*用語集ページのCSS*/
 .glossary-wrapper{
   width: 80%;
@@ -945,3 +993,4 @@ strong {
   background-color: #a3a3cc;
   height: 0.5px;
 }
+>>>>>>> main
