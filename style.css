@@ -53,11 +53,17 @@ body {
   background-color: #000080; /* ダークブルー */
   padding: 10px 0;
   width: 100%;
-  height: 50px;
+  height: 65px;
   z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.site-header-title {
+  width: 100%;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav-list {
@@ -124,6 +130,7 @@ body {
   width: 75%;
   padding: 10px 0 15px 20px;
   margin: 0 auto;
+  color: #333;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -214,6 +221,7 @@ body {
   display: none;
   cursor: pointer;
   line-height: 2rem;
+  color: #333;
 }
 
 .accordion__content.is-open {
@@ -230,10 +238,21 @@ body {
   opacity: 0;
 }
 
+.p-sample {
+  display: inline-block;
+}
+
 .code-container {
   width:100%;
-  height: 45px;
+  height: 100px;
   margin: 0 auto;
+}
+
+.code-container-title_tag {
+  width:100%;
+  height: 300px;
+  margin: 0;
+  padding-left:  30px;
 }
 
 .color-red {
@@ -868,6 +887,7 @@ strong {
   padding: 5px 15px;
 }
 
+<<<<<<< javascriptリファレンスページ
 /*--------------------------------------------------------------------------
       JavaScriptリファレンス
 --------------------------------------------------------------------------*/
@@ -910,3 +930,63 @@ strong {
 #jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
   color: white;
 }
+=======
+.numbered-list li{
+  list-style-type: decimal;
+}
+
+/*用語集ページのCSS*/
+.glossary-wrapper{
+  width: 80%;
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+.glossary-title,
+.glossary-about{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.glossary-about{
+  padding: 10px 0 15px 20px;
+}
+
+.glossary-section{
+  margin: 50px 0;
+}
+
+.section-head{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.content__items{
+  margin-top: 15px;
+}
+
+.item__title{
+  font-size: 23px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.item__description{
+  color: #222222;
+}
+
+.smart__title{
+  font-size: 20px;
+  color: #000080;
+}
+
+.smart__description{
+  padding: 0 15px;
+}
+
+.under-line{
+  border: none;
+  background-color: #a3a3cc;
+  height: 0.5px;
+}
+>>>>>>> main
