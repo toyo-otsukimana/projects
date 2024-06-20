@@ -887,7 +887,7 @@ strong {
   padding: 5px 15px;
 }
 
-<<<<<<< javascriptリファレンスページ
+
 /*--------------------------------------------------------------------------
       JavaScriptリファレンス
 --------------------------------------------------------------------------*/
@@ -930,7 +930,6 @@ strong {
 #jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
   color: white;
 }
-=======
 .numbered-list li{
   list-style-type: decimal;
 }
@@ -989,4 +988,4 @@ strong {
   background-color: #a3a3cc;
   height: 0.5px;
 }
->>>>>>> main
+
