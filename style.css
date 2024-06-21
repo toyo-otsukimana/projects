@@ -653,6 +653,7 @@ p.process-description-line {
 
 h3.title {
   margin: 30px;
+  width: 95%;
   background: transparent;
   border-top: .125em solid #000080;
   border-bottom: .125em solid #000080;
@@ -660,7 +661,7 @@ h3.title {
 }
 
 .chunk {
-  margin: 20px;
+  margin: 20px auto;
   padding: 15px 0;
 }
 
