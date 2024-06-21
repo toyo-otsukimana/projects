@@ -447,6 +447,32 @@ body {
   text-decoration: line-through;
 }
 
+/* text-align */
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+/* line-height */
+.line-height-1{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 2.5;
+}
+
+.line-height-normal{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: normal;
+}
+
 /* colorの例 */
 .color-sample .color-sample-top {
   color: red;
@@ -501,6 +527,21 @@ body {
   border: 3px dotted #003399;
 }
 
+/* top,right,bottom,leftの例 */
+.a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 125px;
+  margin: 0 10px;
+  background-color: rgb(18, 238, 146);
+  border: 2px solid rgb(11, 147, 90);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* border-radiusの例 */
 .radius-sample {
   width: 80%;
@@ -535,6 +576,123 @@ body {
 
 .display-sample-none {
   display: none;
+}
+
+/* justify-content */
+.css-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-space-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-space-around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.justify-content-box1{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 0, 72);
+}
+
+.justify-content-box2{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(4, 231, 121);
+}
+
+.justify-content-box3{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 132, 255);
+}
+
+/* align-items */
+.text-align-left{
+  text-align: left;
+}
+
+.align-items-flex-start{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.align-items-flex-end{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.align-items-center{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items-stretch{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.align-items-box1{
+  width: 40px;
+  background-color: rgb(255, 0, 200);
+}
+
+.align-items-box2{
+  width: 40px;
+  background-color: rgb(227, 231, 4);
+}
+
+.align-items-box3{
+  width: 40px;
+  background-color: rgb(0, 187, 255);
+}
+
+/* position */
+#css-absolute1{
+  height: 40px;
+  width: 70px;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  background-color: #00e69d;
+}
+
+#css-absolute2{
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  background-color: #e69200;
+}
+
+.css-parent{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 182, 248);
 }
 
 /* ------------------------------------------------------------------
