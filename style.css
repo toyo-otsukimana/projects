@@ -528,7 +528,7 @@ body {
 }
 
 /* top,right,bottom,leftの例 */
-.a{
+.css-ary{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -671,8 +671,9 @@ body {
 
 /* position */
 #css-absolute1{
-  height: 40px;
-  width: 70px;
+  height: 80px;
+  width: 100px;
+  line-height: 1.5;
   position: absolute;
   top: 30px;
   left: 25px;
@@ -680,16 +681,17 @@ body {
 }
 
 #css-absolute2{
-  height: 30px;
-  width: 60px;
+  height: 80px;
+  width: 100px;
+  line-height: 1.5;
   position: absolute;
   bottom: 20px;
-  left: 60px;
+  right: 60px;
   background-color: #e69200;
 }
 
 .css-parent{
-  height: 150px;
+  height: 200px;
   width: 100%;
   position: relative;
   background-color: rgb(0, 182, 248);
