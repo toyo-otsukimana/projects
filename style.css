@@ -1013,18 +1013,19 @@ strong {
 .members-description{
   width: 75%;
   margin: 0 auto;
-  padding-left: 20px;
 }
 
 .members-title{
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .members-description{
   color: #222222;
   margin-bottom: 50px;
+  padding-left: 40px;
 }
 
 .annotation{
@@ -1042,7 +1043,7 @@ strong {
 
 .content__img{
   height: 175px;
-  width: 175px;
+  width: auto;
 }
 
 .content__lower{
@@ -1058,7 +1059,7 @@ strong {
 }
 
 .span-title{
-  font-size: 20px;
+  font-size: 18px;
   color: #000080;
   font-weight: bold;
   margin-right: 15px;
