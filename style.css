@@ -767,30 +767,30 @@ strong {
 /* メディアクエリ */
 @media (max-width: 1024px) {
   .process-contents {
-    width: 90%;
+    width: 80%;
   }
 
-  table {
-    font-size: 0.9rem;
+  h1.title, h2.title, h3.title {
+    margin: 20px;
   }
 
-  table th,
-  table td {
-    padding: 0.4em;
+  .toc {
+    padding: 15px;
+    margin: 15px;
   }
-}
 
-@media (max-width: 768px) {
-  .title-image h1 {
-    font-size: 2.5rem;
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 20px;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   p {
@@ -798,26 +798,21 @@ strong {
   }
 
   table {
-    font-size: 0.8rem;
-  }
-
-  table th,
-  table td {
-    padding: 0.3em;
+    width: 90%;
   }
 }
 
-@media (max-width: 480px) {
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin: 5px 0;
+@media (max-width: 768px) {
+  .process-contents {
+    width: 90%;
   }
 
   .title-image h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  h1.title, h2.title, h3.title {
+    margin: 15px;
   }
 
   .toc {
@@ -825,25 +820,79 @@ strong {
     margin: 10px;
   }
 
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 15px;
+  }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  .development-image,
+  .development-layout-image {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-image h1 {
+    font-size: 2rem;
+  }
+
+  .process-contents {
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  h1.title, h2.title, h3.title {
+    margin: 10px;
+  }
+
+  .toc {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 
   p {
     font-size: 0.8rem;
   }
 
-  table {
-    font-size: 0.7rem;
-  }
-
   table th,
   table td {
-    padding: 0.2em;
+    padding: 0.3em;
+  }
+
+  .development-image,
+  .development-layout-image {
+    width: 200px;
   }
 }
 
