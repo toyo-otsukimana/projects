@@ -639,6 +639,10 @@ p.process-description {
   margin: 30px;
 }
 
+p.process-description-edge {
+  text-align: right;
+}
+
 p.process-description-line {
   margin: 50px 30px 30px 30px;
   text-decoration: underline;
