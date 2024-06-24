@@ -673,6 +673,7 @@ body {
 #css-absolute1{
   height: 80px;
   width: 100px;
+  text-align: left;
   line-height: 1.5;
   position: absolute;
   top: 30px;
@@ -683,6 +684,7 @@ body {
 #css-absolute2{
   height: 80px;
   width: 100px;
+  text-align: left;
   line-height: 1.5;
   position: absolute;
   bottom: 20px;
