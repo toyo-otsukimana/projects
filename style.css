@@ -199,11 +199,15 @@ body {
 /*------------------------------------------------------------------------------------------------------------------------
       属性
 ------------------------------------------------------------------------------------------------------------------------*/
-.element, .attribute,.attribute-img,.attribute-list,
-.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
+.element, .attribute, .tag,
 .css-term, .css-properties {
   width: 100%;
-  margin: 100px auto;
+  margin: 70px auto 0;
+}
+
+.attribute-img,.attribute-list,
+.attribute-form,.attribute-table,.attribute-section,.attribute-media,.attribute-others{
+  margin-top: 30px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -994,6 +998,11 @@ strong {
 #jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
 #jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
   color: white;
+}
+
+
+.dom-content-title,.event-content-title {
+margin-top: 30px;
 }
 
 /*==============================================================================================================
