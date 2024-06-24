@@ -171,6 +171,54 @@
                   text-decorationは、テキストに装飾する線の表示を設定します。
                 </dd>
               </div>
+              <!-- text-align -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">text-align</dt>
+                <dd class="accordion__content">
+                  <div class="css-properties-sample">
+                    <div class="text-left">text-align: left;</div>
+                    <div class="text-center">text-align: center;</div>
+                    <div class="text-right">text-align: right;</div>
+                  </div>
+                  text-alignは、要素内のテキストやコンテンツの水平方向の配置を指定します。
+                  <dl>
+                    使用できる値としては以下のものがあげられます。
+                    <dt>・left</dt>
+                    <dd>テキストを左揃えにします。</dd>
+                    <dt>・center</dt>
+                    <dd>テキストを中央揃えにします。</dd>
+                    <dt>・right</dt>
+                    <dd>テキストを右揃えにします。</dd>
+                    <dt>・justify</dt>
+                    <dd>テキストを両端揃えにします。</dd>
+                  </dl>
+                </dd>
+              </div>
+              <!-- line-height -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">line-height</dt>
+                <dd class="accordion__content">
+                  <div class="css-properties-sample">
+                    <div class="line-height-normal">これはnormalです。</div><br>
+                    <div class="line-height-1">これは2.5倍です。</div>
+                  </div>
+                  行ボックスの高さを制御します。
+                  行ボックスは、テキストやインライン要素の高さを表し、その高さは基本的にはフォントのサイズに基づいています。
+                  <dl>
+                    使用できる値としては以下のものがあげられます。
+                    <dt>・px</dt>
+                    <dd>絶対的な単位を使用して、行の高さを指定します。</dd>
+                    <dt>・%（パーセント）</dt>
+                    <dd>相対的な単位を使用して、行の高さを指定します。</dd>
+                    <dt>・正の数値</dt>
+                    <dd>'1'や'1.5'などの単位を省略した正の数値を指定することも出来ます。<br>
+                    この場合、フォントサイズに対する倍率として解釈されます。
+                    </dd>
+                    <dt>・normal</dt>
+                    <dd>ブラウザのデフォルトの行の高さを指定します。</dd>
+                  </dl>
+                </dd>
+              </div>
               <!-- color -->
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">color</dt>
@@ -218,6 +266,31 @@
                   marginは、要素の外側の余白を、paddingは要素の内側の余白を指定します。borderは要素の境界線の設定を行います。
                 </dd>
               </div>
+              <!-- top,right,bottom,left -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">top・right・bottom・left</dt>
+                <dd class="accordion__content">
+                  <div class="css-properties-sample">
+                    top
+                    <div class="css-ary">
+                      left
+                      <div class="box"></div>
+                      right
+                    </div>
+                    bottom
+                  </div>
+                  <dl>
+                    <dt>・top</dt>
+                    <dd>要素の上端と親要素の上端との距離を指定します。</dd>
+                    <dt>・right</dt>
+                    <dd>要素の右端と親要素の右端との距離を指定します。</dd>
+                    <dt>・bottom</dt>
+                    <dd>要素の下端と親要素の下端との距離を指定します。</dd>
+                    <dt>・left</dt>
+                    <dd>要素の左端と親要素の左端との距離を指定します。</dd>
+                  </dl>
+                </dd>
+              </div>
               <!-- border-radius -->
               <div class="accordion__item js-accordion-trigger">
                 <dt class="accordion__title">border-radius</dt>
@@ -259,8 +332,168 @@
                     <dd>要素が横に並び、幅・高さ・上下の余白の指定ができない。テキストの縦横の配置を指定できる。</dd>
                     <dt>・inline-block</dt>
                     <dd>要素が横に並び、幅・高さ・余白の指定ができる。テキストの縦横の配置を指定できる。</dd>
+                    <dt>・flex</dt>
+                    <dd>要素が横に並び、幅・高さ・上下の余白の指定ができる。テキストの縦横の配置を指定できる。</dd>
                     <dt>・none</dt>
                     <dd>要素を非表示にする。</dd>
+                  </dl>
+                </dd>
+              </div>
+              <!-- justify-content -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">justify-content</dt>
+                <dd class="accordion__content">
+                  <div class="css-flex">
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・center</div>
+                      <div class="justify-content-center">
+                        <div class="justify-content-box1">1</div>
+                        <div class="justify-content-box2">2</div>
+                        <div class="justify-content-box3">3</div>
+                      </div>
+                    </div>
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・space-between</div>
+                      <div class="justify-content-space-between">
+                        <div class="justify-content-box1">1</div>
+                        <div class="justify-content-box2">2</div>
+                        <div class="justify-content-box3">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-flex">
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・space-around</div>
+                      <div class="justify-content-space-around">
+                        <div class="justify-content-box1">1</div>
+                        <div class="justify-content-box2">2</div>
+                        <div class="justify-content-box3">3</div>
+                      </div>
+                    </div>
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・space-evenly</div>
+                      <div class="justify-content-space-evenly">
+                        <div class="justify-content-box1">1</div>
+                        <div class="justify-content-box2">2</div>
+                        <div class="justify-content-box3">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  要素内の子要素を水平方向または垂直方向に同のように配置するかを制御するために使われます。
+                  <dl>
+                    使用できる値としては以下のものがあげられます。
+                    <dt>・flex-start</dt>
+                    <dd>フレックスアイテムをコンテナの先頭に配置する</dd>
+                    <dt>・flex-end</dt>
+                    <dd>フレックスアイテムをコンテナの終わりに配置する</dd>
+                    <dt>・center</dt>
+                    <dd>フレックスアイテムをコンテナの中央に配置する</dd>
+                    <dt>・space-between</dt>
+                    <dd>フレックスアイテム間に均等なスペースを配置し、最初と最後のアイテムはコンテナの両端に配置します。</dd>
+                    <dt>・space-around</dt>
+                    <dd>フレックスアイテムの周りに均等なスペースを配置します。アイテム間のスペースは等しく、コンテナの端には半分のスペースが配置されます。</dd>
+                    <dt>・space-evenly</dt>
+                    <dd>フレックスアイテム間に均等なスペースを配置し、アイテムの間隔はすべて等しくなります。</dd>
+                  </dl>
+                </dd>
+              </div>
+              <!-- align-items -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">align-items</dt>
+                <dd class="accordion__content">
+                  <div class="css-flex">
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・flex-start</div>
+                      <div class="align-items-flex-start">
+                        <div class="align-items-box1">1</div>
+                        <div class="align-items-box2">2</div>
+                        <div class="align-items-box3">3</div>
+                      </div>
+                    </div>
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・flex-end</div>
+                      <div class="align-items-flex-end">
+                        <div class="align-items-box1">1</div>
+                        <div class="align-items-box2">2</div>
+                        <div class="align-items-box3">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="css-flex">
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・center</div>
+                      <div class="align-items-center">
+                        <div class="align-items-box1">1</div>
+                        <div class="align-items-box2">2</div>
+                        <div class="align-items-box3">3</div>
+                      </div>
+                    </div>
+                    <div class="css-properties-sample">
+                      <div class="text-align-left">・stretch</div>
+                      <div class="align-items-stretch">
+                        <div class="align-items-box1">1</div>
+                        <div class="align-items-box2">2</div>
+                        <div class="align-items-box3">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  要素内の子要素を垂直方向にどのように配置するかを制御します。
+                  <dl>
+                    使用できる値としては以下のものがあげられます。
+                    <dt>・flex-start</dt>
+                    <dd>アイテムをコンテナの先頭に配置します。<br>
+                      アイテムの高さは無視されます。
+                    </dd>
+                    <dt>・flex-end</dt>
+                    <dd>アイテムをコンテナの終わりに配置します。<br>
+                      アイテムの高さは無視されます。
+                    </dd>
+                    <dt>・center</dt>
+                    <dd>アイテムをコンテナの中央に配置します。</dd>
+                    <dt>・stretch</dt>
+                    <dd>デフォルトの値で、アイテムをコンテナの高さ最大まで伸ばします。アイテムが指定された高さを持たない場合は、コンテナの高さに合わせて伸縮します。</dd>
+                    <dt>・baseline</dt>
+                    <dd>アイテムのベースラインを基準にして配置します。文字などの場合、テキストのベースラインが揃うように配置されます。</dd>
+                  </dl>
+                </dd>
+              </div>
+              <!-- position -->
+              <div class="accordion__item js-accordion-trigger">
+                <dt class="accordion__title">position</dt>
+                <dd class="accordion__content">
+                  <div class="css-properties-sample">
+                    <div class="css-parent">relative
+                      <p id="css-absolute1">absolute<br>
+                        top: 30px;<br>left: 25px;
+                      </p>
+                      <p id="css-absolute2">absolute<br>
+                        bottom: 20px;<br>right: 60px;
+                      </p>
+                    </div>
+                  </div>
+                  要素の配置方法を指定します。<br>
+                  HTML要素を特定の位置に配置するために使用されます。
+                  <dl>
+                    使用できる値としては以下のものがあげられます。
+                    <dt>・absolute</dt>
+                    <dd>絶対的な位置<br>
+                      親要素からの位置指定を受けます。ページ全体の中で自由に配置できます。
+                    </dd>
+                    <dt>・relative</dt>
+                    <dd>相対的な配置<br>
+                      他の要素に影響を与えずに、自分自身を少し動かす場合に使用する。
+                    </dd>
+                    <dt>・fixed</dt>
+                    <dd>固定配置<br>
+                    ページ全体の中でスクロールしても動かない要素を作成します。
+                    </dd>
+                    <dt>・sticky</dt>
+                    <dd>スクロール時に要素の位置が変わることがある配置<br>
+                      要素がコンテナからスクロールされる際に、指定された位置に固定されます。
+                    </dd>
+                    <dt>・static</dt>
+                    <dd>通常の配置<br>
+                    ページが読み込まれたときにその要素がどこにあるか、そのままの位置に表示されます。</dd>
                   </dl>
                 </dd>
               </div>
