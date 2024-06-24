@@ -83,8 +83,9 @@ body {
 
 /* メインコンテンツ */
 .main-wrapper {
-  height: calc(100% - 50px - 50px);
+  height: calc(100% - 50px);
   text-align: center;
+  margin-top: 85px;
   padding: 50px 20px;
   flex: 1;
 }
@@ -107,17 +108,72 @@ body {
   line-height: 1.5;
 }
 
+.main-exp-tab {
+  width: 50%;
+  border-radius: 5px;
+  border: 3px solid #000080;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.main-exp-link {
+  color: #0073e6;
+}
+
+.dli-caret-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.64952em 0.375em;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+/*==============================================================================================================
+      footer
+================================================================================================================*/
+.site-footer {
+  height: 50px;
+  background-color: #000080;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-copy {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav-item {
+  margin: 0 15px;
+}
+
+.footer-nav-link {
+  color: white;
+  font-size: 13px;
+}
+
 /*==============================================================================================================
       HTMLリファレンスーmain
 ================================================================================================================*/
 
 .html-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
 }
 
 .html-title{
@@ -162,11 +218,15 @@ body {
 /*------------------------------------------------------------------------------------------------------------------------
       属性
 ------------------------------------------------------------------------------------------------------------------------*/
-.element, .attribute,.attribute-img,.attribute-list,
-.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
+.element, .attribute, .tag,
 .css-term, .css-properties {
   width: 100%;
-  margin: 100px auto;
+  margin: 70px auto 0;
+}
+
+.attribute-img,.attribute-list,
+.attribute-form,.attribute-table,.attribute-section,.attribute-media,.attribute-others{
+  margin-top: 30px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -323,11 +383,10 @@ body {
 
 .css-main {
   width: 80%;
-  margin: 0 auto;
+  margin: 85px auto 0;
   padding: 35px 0;
   text-align: light;
   line-height: 1.5em;
-  margin-top: 70px;
 }
 
 .css-main h1, .css-main h2, .css-main h3,.css-main h4{
@@ -540,7 +599,7 @@ body {
       webサイト制作の手順 
 -------------------------------------------------------------------*/
 .process-main {
-  margin-top: 50px;
+  margin-top: 85px;
   width: 100%;
 }
 
@@ -839,9 +898,8 @@ strong {
 .question-wrapper {
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 85px auto 0;
   flex: 1;
-  margin-top: 70px;
 }
 
 .question-card{
@@ -934,11 +992,58 @@ strong {
   list-style-type: decimal;
 }
 
+.numbered-list li{
+  list-style-type: decimal;
+}
+
+/*--------------------------------------------------------------------------
+      JavaScriptリファレンス
+--------------------------------------------------------------------------*/
+.javascript-main {
+  width: 80%;
+  margin: 85px auto 0;
+  padding: 35px 0;
+  text-align: light;
+  line-height: 1.5em;
+  margin-top: 70px;
+}
+
+.javascript-main h1, h2, h3, h4{
+  width: 75%;
+  margin: 15px auto 0;
+}
+
+.javascript-main p {
+  width: 75%;
+  padding: 10px 0 15px 20px;
+  margin: 0 auto;
+}
+
+.javascript-structure{
+  width: 60%;
+  background-color: #333;
+  padding: 20px 40px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+#jscodeBlock, #jscodeBlock1, #jscodeBlock2, #jscodeBlock3, #jscodeBlock4, 
+#jscodeBlock5, #jscodeBlock6, #jscodeBlock7, #jscodeBlock8, #jscodeBlock9, 
+#jscodeBlock10, #jscodeBlock11, #jscodeBlock12, #jscodeBlock13, #jscodeBlock14, 
+#jscodeBlock15, #jscodeBlock16, #jscodeBlock17, #jscodeBlock18, #jscodeBlock19,
+#jscodeBlock20, #jscodeBlock21, #jscodeBlock22, #jscodeBlock23, #jscodeBlock24,
+#jscodeBlock25, #jscodeBlock26, #jscodeBlock27, #jscodeBlock28, #jscodeBlock29,
+#jscodeBlock30, #jscodeBlock31, #jscodeBlock32, #jscodeBlock33, #jscodeBlock34,
+#jscodeBlock35, #jscodeBlock36, #jscodeBlock37, #jscodeBlock38, #jscodeBlock39,
+#jscodeBlock40, #jscodeBlock41, #jscodeBlock42{
+  color: white;
+}
+
 /*用語集ページのCSS*/
 .glossary-wrapper{
   width: 80%;
   padding: 35px 0;
-  margin: 0 auto;
+  margin: 85px auto 0;
 }
 
 .glossary-title,
@@ -968,6 +1073,7 @@ strong {
   font-size: 23px;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #000080;
 }
 
 .item__description{
@@ -989,3 +1095,72 @@ strong {
   height: 0.5px;
 }
 
+.dom-content-title,.event-content-title {
+margin-top: 30px;
+}
+
+/*==============================================================================================================
+      メンバー紹介ページのCSS
+================================================================================================================*/
+
+.members-wrapper{
+  width: 80%;
+  padding: 35px 0;
+  margin: 85px auto 0;
+}
+
+.members-title,
+.members-description{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.members-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.members-description{
+  color: #222222;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+.annotation{
+  font-size: 12px;
+  color: #666666;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.content__upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__img{
+  height: 175px;
+  width: auto;
+}
+
+.content__lower{
+  margin-top: 30px;
+}
+
+.introduce__list{
+  display: block;
+}
+
+.introduce__list li{
+  margin: 15px 0;
+}
+
+.span-title{
+  font-size: 18px;
+  color: #000080;
+  font-weight: bold;
+  margin-right: 15px;
+}
