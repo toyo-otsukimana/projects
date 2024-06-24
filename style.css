@@ -1130,16 +1130,18 @@ strong {
   width: 100vw;
   height: 100vh;
   background-color: #000080;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 999;
+  transition: opacity ls ease-out;
 }
 
 .loading-text{
   color: white;
-  font-size: 16px;
+  font-size: 23px;
   position: absolute;
   top: auto;
   left: auto;
