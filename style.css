@@ -152,7 +152,15 @@ body {
   margin: 0 auto;
 }
 #codeBlock {
-  color: white;
+  color: #eaeaea;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: break-word;
+  padding: 10px;
+  overflow: auto;
+  max-width: 100%;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -165,7 +173,7 @@ body {
 
 .html-contents ul li {
   list-style:disc;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -229,7 +237,6 @@ body {
   padding: 0 35px 15px 20px;
   display: none;
   cursor: pointer;
-  line-height: 2rem;
   color: #333;
 }
 
@@ -277,15 +284,21 @@ body {
 }
 
 .code-sample {
+  width: 70%;
   background-color: #333;
   padding: 6px 10px;
-  color: #ccc;
+  color: #eaeaea;
   letter-spacing: 0.1em;
+}
+
+.ol-number{
+  width: 80%;
+  padding-left: 30px;
 }
 
 .ol-number li{
   list-style: decimal;
-  
+  padding-bottom: 10px;
 }
 /*==============================================================================================================
       footer
@@ -328,6 +341,7 @@ body {
 .css-explanation p,
 .css-content-composition p{
   padding: 10px 0 15px 20px;
+  color: #333;
 }
 
 .css-main {
@@ -761,89 +775,6 @@ strong {
   padding-left: 5px;
 }
 
-/* メディアクエリ */
-@media (max-width: 1024px) {
-  .process-contents {
-    width: 90%;
-  }
-
-  table {
-    font-size: 0.9rem;
-  }
-
-  table th,
-  table td {
-    padding: 0.4em;
-  }
-}
-
-@media (max-width: 768px) {
-  .title-image h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  table {
-    font-size: 0.8rem;
-  }
-
-  table th,
-  table td {
-    padding: 0.3em;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    margin: 5px 0;
-  }
-
-  .title-image h1 {
-    font-size: 2rem;
-  }
-
-  .toc {
-    padding: 10px;
-    margin: 10px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
-
-  table {
-    font-size: 0.7rem;
-  }
-
-  table th,
-  table td {
-    padding: 0.2em;
-  }
-}
-
 /*Q&AページのCSS*/
 .question-wrapper {
   width: 80%;
@@ -949,4 +880,127 @@ strong {
   border: none;
   background-color: #a3a3cc;
   height: 0.5px;
+}
+
+/*==============================================================================================================
+      メディアクエリ
+================================================================================================================*/
+
+@media (max-width: 1024px) {
+  .process-contents {
+    width: 90%;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.4em;
+  }
+
+  .html-main{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .title-image h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.3em;
+  }
+  .html-main{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .title-image h1 {
+    font-size: 2rem;
+  }
+
+  .toc {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  table {
+    font-size: 0.7rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2em;
+  }
+
+  .html-main{
+    width: 100%;
+  }
+
+  .html-title{
+    width: 85%;
+    margin: 15px auto 0;
+  }
+  
+  
+  .html-main p {
+    width: 85%;
+    padding: 10px 0 15px 20px;
+  }
+
+  .structure{
+    width: 85%;
+    padding: 5px 10px;
+  }
+
+  .accordion {
+    width: 85%;
+    padding-left: 10px;
+  }
+
+  .accordion__content {
+    padding: 0 35px 15px 10px;
+  }
 }
