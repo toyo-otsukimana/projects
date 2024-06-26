@@ -182,7 +182,15 @@ body {
   margin: 0 auto;
 }
 #codeBlock {
-  color: white;
+  color: #eaeaea;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: break-word;
+  padding: 10px;
+  overflow: auto;
+  max-width: 100%;
 }
 
 /* 基本構造 */
@@ -193,17 +201,21 @@ body {
 
 .html-contents ul li {
   list-style:disc;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
       属性
 ------------------------------------------------------------------------------------------------------------------------*/
-.element, .attribute,.attribute-img,.attribute-list,
-.attribute-form,.attribute-table,.attribute-section,.attribute-others, .tag,
+.element, .attribute, .tag,
 .css-term, .css-properties {
   width: 100%;
-  margin: 100px auto;
+  margin: 70px auto 0;
+}
+
+.attribute-img,.attribute-list,
+.attribute-form,.attribute-table,.attribute-section,.attribute-media,.attribute-others{
+  margin-top: 30px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -257,7 +269,6 @@ body {
   padding: 0 35px 15px 20px;
   display: none;
   cursor: pointer;
-  line-height: 2rem;
   color: #333;
 }
 
@@ -305,15 +316,21 @@ body {
 }
 
 .code-sample {
+  width: 70%;
   background-color: #333;
   padding: 6px 10px;
-  color: #ccc;
+  color: #eaeaea;
   letter-spacing: 0.1em;
+}
+
+.ol-number{
+  width: 80%;
+  padding-left: 30px;
 }
 
 .ol-number li{
   list-style: decimal;
-  
+  padding-bottom: 10px;
 }
 
 /*==============================================================================================================
@@ -327,6 +344,7 @@ body {
 .css-explanation p,
 .css-content-composition p{
   padding: 10px 0 15px 20px;
+  color: #333;
 }
 
 .css-main {
@@ -453,6 +471,32 @@ body {
   text-decoration: line-through;
 }
 
+/* text-align */
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+/* line-height */
+.line-height-1{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 2.5;
+}
+
+.line-height-normal{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: normal;
+}
+
 /* colorの例 */
 .color-sample .color-sample-top {
   color: red;
@@ -507,6 +551,21 @@ body {
   border: 3px dotted #003399;
 }
 
+/* top,right,bottom,leftの例 */
+.css-ary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 125px;
+  margin: 0 10px;
+  background-color: rgb(18, 238, 146);
+  border: 2px solid rgb(11, 147, 90);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /* border-radiusの例 */
 .radius-sample {
   width: 80%;
@@ -541,6 +600,128 @@ body {
 
 .display-sample-none {
   display: none;
+}
+
+
+/* justify-content */
+.css-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-space-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-space-around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.justify-content-box1{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 0, 72);
+}
+
+.justify-content-box2{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(4, 231, 121);
+}
+
+.justify-content-box3{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 132, 255);
+}
+
+/* align-items */
+.text-align-left{
+  text-align: left;
+}
+
+.align-items-flex-start{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.align-items-flex-end{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.align-items-center{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items-stretch{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.align-items-box1{
+  width: 40px;
+  background-color: rgb(255, 0, 200);
+}
+
+.align-items-box2{
+  width: 40px;
+  background-color: rgb(227, 231, 4);
+}
+
+.align-items-box3{
+  width: 40px;
+  background-color: rgb(0, 187, 255);
+}
+
+/* position */
+#css-absolute1{
+  height: 80px;
+  width: 100px;
+  text-align: left;
+  line-height: 1.5;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  background-color: #00e69d;
+}
+
+#css-absolute2{
+  height: 80px;
+  width: 100px;
+  text-align: left;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  background-color: #e69200;
+}
+
+.css-parent{
+  height: 200px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(0, 182, 248);
 }
 
 /*==============================================================================================================
@@ -764,138 +945,6 @@ strong {
   padding-left: 5px;
 }
 
-/* メディアクエリ */
-@media (max-width: 1024px) {
-  .process-contents {
-    width: 80%;
-  }
-
-  h1.title, h2.title, h3.title {
-    margin: 20px;
-  }
-
-  .toc {
-    padding: 15px;
-    margin: 15px;
-  }
-
-  p.process-description,
-  p.process-description-line,
-  .process-description-title {
-    margin: 20px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  table {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .process-contents {
-    width: 90%;
-  }
-
-  .title-image h1 {
-    font-size: 2.5rem;
-  }
-
-  h1.title, h2.title, h3.title {
-    margin: 15px;
-  }
-
-  .toc {
-    padding: 10px;
-    margin: 10px;
-  }
-
-  p.process-description,
-  p.process-description-line,
-  .process-description-title {
-    margin: 15px;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.85rem;
-  }
-
-  table {
-    width: 95%;
-  }
-
-  .development-image,
-  .development-layout-image {
-    width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-image h1 {
-    font-size: 2rem;
-  }
-
-  .process-contents {
-    width: 95%;
-    padding: 20px 0;
-  }
-
-  h1.title, h2.title, h3.title {
-    margin: 10px;
-  }
-
-  .toc {
-    padding: 5px;
-    margin: 5px;
-  }
-
-  p.process-description,
-  p.process-description-line,
-  .process-description-title {
-    margin: 10px;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
-
-  table th,
-  table td {
-    padding: 0.3em;
-  }
-
-  .development-image,
-  .development-layout-image {
-    width: 200px;
-  }
-}
-
 /*==============================================================================================================
       Q&AページのCSS
 ==============================================================================================================*/
@@ -996,6 +1045,11 @@ strong {
   color: white;
 }
 
+
+.dom-content-title,.event-content-title {
+margin-top: 30px;
+}
+
 /*==============================================================================================================
       用語集ページのCSS
 ==============================================================================================================*/
@@ -1054,7 +1108,7 @@ strong {
   height: 0.5px;
 }
 
-/*==============================================================================================================
+/*================================================================================================================
       メンバー紹介ページのCSS
 ================================================================================================================*/
 
@@ -1162,3 +1216,175 @@ strong {
     transform: rotate(360deg);
   }
 }
+=======
+      メディアクエリ
+================================================================================================================*/
+
+@media (max-width: 1024px) {
+  .process-contents {
+    width: 80%;
+  }
+
+  h1.title, h2.title, h3.title {
+    margin: 20px;
+  }
+
+  .toc {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  table {
+    width: 90%;
+  }
+
+  .html-main{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .process-contents {
+    width: 90%;
+  }
+
+  .title-image h1 {
+    font-size: 2.5rem;
+  }
+
+  h1.title, h2.title, h3.title {
+    margin: 15px;
+  }
+
+  .toc {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  .development-image,
+  .development-layout-image {
+    width: 250px;
+  }
+  
+  .html-main{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-image h1 {
+    font-size: 2rem;
+  }
+
+  .process-contents {
+    width: 95%;
+    padding: 20px 0;
+  }
+
+  h1.title, h2.title, h3.title {
+    margin: 10px;
+  }
+
+  .toc {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  p.process-description,
+  p.process-description-line,
+  .process-description-title {
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.3em;
+  }
+
+  .development-image,
+  .development-layout-image {
+    width: 200px;
+  }
+  
+  .html-main{
+    width: 100%;
+  }
+
+  .html-title{
+    width: 85%;
+    margin: 15px auto 0;
+  }
+  
+  
+  .html-main p {
+    width: 85%;
+    padding: 10px 0 15px 20px;
+  }
+
+  .structure{
+    width: 85%;
+    padding: 5px 10px;
+  }
+
+  .accordion {
+    width: 85%;
+    padding-left: 10px;
+  }
+
+  .accordion__content {
+    padding: 0 35px 15px 10px;
+  }
+ }
