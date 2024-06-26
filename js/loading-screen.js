@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         loadingScreen.style.display = "none";
       }, 1000); // 1秒間でフェードアウトする。
-    }, 3000);   // 3秒間表示し、その後フェードアウト処理を実行する
+    }, 1500);   // 3→1.5秒間表示し、その後フェードアウト処理を実行する
   }
 });
