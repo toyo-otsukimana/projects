@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>用語集</title>
+  <title>用語集 Webページ制作ガイド</title>
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
+    <div class="site-header-title">
+      Webページ制作ガイド
+    </div>
     <ul class="nav-list">
       <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">環境構築</a></li>
+      <li class="nav-item"><a href="environmental_introduction.html" class="nav-link">環境構築</a></li>
       <li class="nav-item"><a href="process.html" class="nav-link">制作手順</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">用語集</a></li>
+      <li class="nav-item"><a href="glossary.html" class="nav-link">用語集</a></li>
       <li class="nav-item"><a href="html-reference.html" class="nav-link">HTML</a></li>
       <li class="nav-item"><a href="css-reference.html" class="nav-link">CSS</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">JavaScript</a></li>
+      <li class="nav-item"><a href="javascript-reference.html" class="nav-link">JavaScript</a></li>
       <li class="nav-item"><a href="Q&A.html" class="nav-link">Q&A</a></li>
       <!--必要に応じて項目を追加します。-->
     </ul>
@@ -64,6 +67,13 @@
           <ul>
             <li><a href = "#maintenance_1">5-1.定期的な更新</a></li>
             <li><a href = "#maintenance_2">5-2.ユーザーフィードバックの収集と改善</a></li>
+          </ul>
+        </li>
+        <li><a href = "#web">6.Web</a>
+          <ul>
+            <li><a href = "#web_1">6-1.Webの概要</a></li>
+            <li><a href = "#web_2">6-2.Webを構成する主な要素</a></li>
+            <li><a href = "#web_2">6-3.関連用語</a></li>
           </ul>
         </li>
       </ul>
@@ -326,21 +336,90 @@
         </div>
       </dl>
     </div>
+    <div class = "glossary-section">
+      <h3 class = "section-head" id = "web">6.Web</h3>
+      <dl class = "accordion js-accordion">
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_1">6-1.Webの概要</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">Web（ワールドワイドウェブ）</div>
+              <div class = "item__description">
+                Web（ワールドワイドウェブ、WWW）は、インターネット上で情報を共有するためのシステムであり、ハイパーテキスト文書の集合体を指す。
+              </div>
+            </div>
+          </dd>
+        </div>
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_2">6-2.Webを構成する主な要素</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">Webブラウザ</div>
+              <div class = "item__description">
+                Webブラウザは、ユーザーがWebページを閲覧するためのソフトウェア。<br>
+                代表的なWebブラウザには、Google Chrome、Mozilla Firefox、Microsoft Edge、Safariなどがある。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">Webサーバ</div>
+              <div class = "item__description">
+                Webサーバは、Webページをホスティングし、ユーザーの要求に応じてこれらのページを提供するコンピュータシステム。<br>
+                Apache、Nginx、Microsoft IISなどが一般的なWebサーバソフトウェアに該当する。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">URL（Uniform Resource Locator）</div>
+              <div class = "item__description">
+                URLは、インターネット上で特定のリソースを識別するためのアドレス。例えば、`https://www.example.com`のように書かれる。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">HTTP/HTTPS（Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure）</div>
+              <div class = "item__description">
+                HTTPは、WebブラウザとWebサーバ間で情報を通信するためのプロトコル。HTTPSは、HTTPにセキュリティ機能を追加したもので、データの暗号化を行う。
+              </div>
+            </div>
+          </dd>
+        </div>
+        <div class = "accordion__item js-accordion-trigger">
+          <dt class = "accordion__title" id = "web_3">6-3.関連用語</dt>
+          <dd class = "accordion__content">
+            <div class = "content__items">
+              <div class = "item__title">サーチエンジン</div>
+              <div class = "item__description">
+                インターネット上の情報を検索するためのツール。「検索エンジン」とも呼ばれる。<br>
+                代表的なサーチエンジンにGoogle、Yahoo!、Bingなどがある。
+              </div>
+            </div>
+            <hr class = "under-line">
+            <div class = "content__items">
+              <div class = "item__title">Webアプリケーション</div>
+              <div class = "item__description">
+                Webブラウザを通じて利用されるアプリケーションソフトウェア。「ウェブアプリ」とも呼ばれる。<br>
+                代表的なものに動画再生・共有の「YouTube」、メールクライアントの「Gmail」、通話・チャットアプリの「Skype」などがある。
+              </div>
+            </div>
+          </dd>
+        </div>
+      </dl>
+    </div>
   </div>
-  <!--ページトップに遷移できるようにするためのボタン-->
-  <div id="js-scroll-top" class="scroll-top">TOP</div>
+  
   <footer class="site-footer">
     <div class="footer-copy">&copy;Webページ制作ガイド</div>
     <ul class="footer-nav-list">
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">サイトマップ</a></li>
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">プライバシーポリシー</a></li>
-      <li class="footer-nav-item"><a href="#" class="footer-nav-link">利用規約</a></li>
+      <li class="footer-nav-item"><a href="#" class="footer-nav-link">メンバー紹介</a></li>
+      <li class="footer-nav-item"><a href="terms_of_use.html" class="footer-nav-link">利用規約</a></li>
     </ul>
   </footer>
+
   <!--javaScriptの実行ファイルを呼び出す-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./js/navigation.js"></script>
   <script src="./js/accordion.js"></script>
-  <script src="./js/back-to-top.js" async></script>
+  
 </body>
 </html>
