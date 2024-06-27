@@ -175,6 +175,48 @@ pre {
   list-style:disc;
   margin-left: 15px;
 }
+/*------------------------------------------------------------------------------------------------------------------------
+      目次
+------------------------------------------------------------------------------------------------------------------------*/
+.html-toc {
+  width: 75%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 30px auto 20px;
+  background-color: #f9f9f9;
+}
+
+.html-toc h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  
+}
+
+.html-toc ul {
+  padding: 5px 0;
+}
+
+.html-toc ul li{
+  list-style-type: none;
+}
+
+.html-toc ul ul {
+  padding-left: 20px;
+}
+
+.html-toc ul ul li {
+  padding: 0.5rem;
+}
+
+.html-toc a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.html-toc a:hover {
+  text-decoration: underline;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------------------
       属性
@@ -624,7 +666,7 @@ h1.title {
 
 .toc ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 5px 0;
 }
 
 .toc ul ul {
