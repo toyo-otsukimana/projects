@@ -898,6 +898,16 @@ strong {
   .development-layout-image {
     width: 200px;
   }
+
+  .js-accordion__title{
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .javascript-main-title{
+    font-size: 13px;
+  }
 }
 
 /*==============================================================================================================
@@ -967,6 +977,40 @@ strong {
   text-align: light;
   line-height: 1.5em;
   margin-top: 70px;
+}
+
+.js-accordion__title {
+  position: relative;
+  padding: 15px 60px 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.js-accordion__title::before,
+.js-accordion__title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #3abec1;
+  width: 20px;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.js-accordion__title::after {
+  transform: rotate(90deg);
+}
+
+.accordion__item.is-active .js-accordion__title::before {
+  transform: rotate(180deg);
+}
+
+.accordion__item.is-active .js-accordion__title::after {
+  transform: rotate(180deg);
+  opacity: 0;
 }
 
 .javascript-main h1, h2, h3, h4{
