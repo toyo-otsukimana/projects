@@ -1004,3 +1004,112 @@ strong {
   background-color: #a3a3cc;
   height: 0.5px;
 }
+
+/* ドリル */
+
+.issue-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.issue-main {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* 追加: 上下の余白を確保 */
+}
+
+.issue-main h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.issue-main h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px; /* ボタン間のスペース */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/*メディアクエリ*/
+
+@media (max-width: 600px) {
+  .issue-main {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .issue-main h1 {
+    font-size: 20px;
+  }
+
+  .issue-main h2 {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 5px 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    flex: 1 1 auto; /* ボタンの幅を自動調整 */
+    margin: 5px;
+  }
+}
